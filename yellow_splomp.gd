@@ -21,5 +21,5 @@ func _ready():
 	set("attachments/7/spatial_attachment_path", NodePath("../.."))
 	set("attachments/8/point_index", 29)
 	set("attachments/8/spatial_attachment_path", NodePath("../.."))
-	#set("attachments/9/point_index", 17)
-	#set("attachments/9/spatial_attachment_path", NodePath("../.."))
+	set("attachments/9/point_index", 17)
+	set("attachments/9/spatial_attachment_path", NodePath("../.."))

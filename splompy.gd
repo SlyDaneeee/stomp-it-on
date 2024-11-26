@@ -37,8 +37,8 @@ func _ready():
 	#set("attachments/0/offset", Vector3(-0.678, -0.47, 0.476))
 	set("attachments/8/point_index", 17)
 	set("attachments/8/spatial_attachment_path", NodePath("../.."))
-	#set("attachments/9/point_index", 48)
-	#set("attachments/9/spatial_attachment_path", NodePath("../.."))
+	set("attachments/9/point_index", 48)
+	set("attachments/9/spatial_attachment_path", NodePath("../.."))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -556,7 +556,7 @@ simulation_precision = 2
 total_mass = 20.01
 linear_stiffness = 0.1
 pressure_coefficient = 50.0
-pinned_points = [21, 62, 48, 20, 2, 1, 14, 28, 29]
+pinned_points = [21, 62, 48, 20, 2, 1, 14, 28, 29, 17]
 attachments/0/point_index = 21
 attachments/0/spatial_attachment_path = NodePath("../..")
 attachments/0/offset = Vector3(-0.677652, -0.469948, 0.486181)
@@ -584,6 +584,9 @@ attachments/7/offset = Vector3(0.742258, -0.390974, -0.545449)
 attachments/8/point_index = 29
 attachments/8/spatial_attachment_path = NodePath("../..")
 attachments/8/offset = Vector3(0.605644, 0.0588044, -0.830344)
+attachments/9/point_index = 17
+attachments/9/spatial_attachment_path = NodePath("")
+attachments/9/offset = Vector3(0, 0, 0)
 script = ExtResource("2_45sd3")
 
 [node name="low-poly_flower" parent="splompers/RigidBody3D/yellow" instance=ExtResource("2_u4i1k")]
@@ -652,7 +655,7 @@ simulation_precision = 2
 total_mass = 20.01
 linear_stiffness = 0.1
 pressure_coefficient = 50.0
-pinned_points = [21, 62, 48, 20, 2, 1, 14, 28, 29]
+pinned_points = [21, 62, 48, 20, 2, 1, 14, 28, 29, 17]
 attachments/0/point_index = 21
 attachments/0/spatial_attachment_path = NodePath("../..")
 attachments/0/offset = Vector3(-0.677652, -0.469948, 0.476037)
@@ -680,6 +683,9 @@ attachments/7/offset = Vector3(0.742258, -0.390974, -0.555592)
 attachments/8/point_index = 29
 attachments/8/spatial_attachment_path = NodePath("../..")
 attachments/8/offset = Vector3(0.605644, 0.0588044, -0.840487)
+attachments/9/point_index = 17
+attachments/9/spatial_attachment_path = NodePath("")
+attachments/9/offset = Vector3(0, 0, 0)
 script = ExtResource("5_lcu4p")
 
 [node name="green" type="Node3D" parent="splompers/RigidBody3D"]
