@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkyisl60tufxr"
+path="res://.godot/imported/brick_guy_ball.obj-d98b5a62533380ec0c6650f7cbd25f15.mesh"
+
+[deps]
+
+files=["res://.godot/imported/brick_guy_ball.obj-d98b5a62533380ec0c6650f7cbd25f15.mesh"]
+
+source_file="res://bouncers/brick_guy_ball.obj"
+dest_files=["res://.godot/imported/brick_guy_ball.obj-d98b5a62533380ec0c6650f7cbd25f15.mesh", "res://.godot/imported/brick_guy_ball.obj-d98b5a62533380ec0c6650f7cbd25f15.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

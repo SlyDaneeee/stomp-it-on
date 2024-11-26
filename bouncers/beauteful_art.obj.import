@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bu1y3uyqjmmqs"
+path="res://.godot/imported/beauteful_art.obj-18575d445987c7972a0757b42261c1dc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/beauteful_art.obj-18575d445987c7972a0757b42261c1dc.mesh"]
+
+source_file="res://bouncers/beauteful_art.obj"
+dest_files=["res://.godot/imported/beauteful_art.obj-18575d445987c7972a0757b42261c1dc.mesh", "res://.godot/imported/beauteful_art.obj-18575d445987c7972a0757b42261c1dc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

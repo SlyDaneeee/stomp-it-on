@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dklecm7503h4h"
+path="res://.godot/imported/spiky_four.obj-f2035f7d9a7eb6a7c3a5e8799eb890ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/spiky_four.obj-f2035f7d9a7eb6a7c3a5e8799eb890ff.mesh"]
+
+source_file="res://bouncers/spiky_four.obj"
+dest_files=["res://.godot/imported/spiky_four.obj-f2035f7d9a7eb6a7c3a5e8799eb890ff.mesh", "res://.godot/imported/spiky_four.obj-f2035f7d9a7eb6a7c3a5e8799eb890ff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

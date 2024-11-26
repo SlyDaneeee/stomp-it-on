@@ -1,0 +1,1100 @@
+[gd_scene load_steps=70 format=4 uid="uid://baob2qs7mvesg"]
+
+[ext_resource type="Script" path="res://band.gd" id="2_6wptf"]
+[ext_resource type="Script" path="res://shop_meny_stomp2.gd" id="2_flb2p"]
+[ext_resource type="PackedScene" uid="uid://rfsw0nt52mlc" path="res://bouncers/shop_meny_stomp_box3.glb" id="3_ntgj4"]
+[ext_resource type="PackedScene" uid="uid://dmteoogctvic7" path="res://bouncers/shop_meny_stomp_computer2.glb" id="4_xd83m"]
+[ext_resource type="PackedScene" uid="uid://c3n3kusd5l4bw" path="res://bouncers/shop_meny_stomp_lamp.glb" id="5_gw4hk"]
+[ext_resource type="PackedScene" uid="uid://ctxsoyg26uce8" path="res://bouncers/table.glb" id="6_7ppy6"]
+[ext_resource type="PackedScene" uid="uid://cg1m238drxiqe" path="res://bouncers/plant.glb" id="7_vab2x"]
+[ext_resource type="Texture2D" uid="uid://cbryw4dp2lraw" path="res://Skærmbillede 2024-10-18 171154.png" id="8_gfpr2"]
+[ext_resource type="ArrayMesh" uid="uid://d32f50brf4quj" path="res://blue_ball2.obj" id="9_evg8s"]
+[ext_resource type="PackedScene" uid="uid://mchiq51adiyw" path="res://low-poly_flower.glb" id="11_6x2v5"]
+[ext_resource type="Texture2D" uid="uid://cysf4uwogq7uv" path="res://bouncers/Skærmbillede 2024-11-15 164520.png" id="12_0aj31"]
+[ext_resource type="ArrayMesh" uid="uid://b0bsatmh6cosd" path="res://bouncers/jelly_ball.obj" id="13_1gp3y"]
+[ext_resource type="Texture2D" uid="uid://cfq42rkqij0ag" path="res://Skærmbillede 2024-10-18 121834.png" id="14_0rgoo"]
+[ext_resource type="Texture2D" uid="uid://dq08rscm13u77" path="res://bouncers/Skærmbillede 2024-11-07 161348.png" id="15_d86qe"]
+[ext_resource type="Texture2D" uid="uid://bw0gj2j1fjrbp" path="res://bouncers/Skærmbillede 2024-11-07 093612.png" id="16_l3yor"]
+[ext_resource type="ArrayMesh" uid="uid://b3cdiahjvqpy1" path="res://bouncers/low_poly_eye.obj" id="17_x14ps"]
+[ext_resource type="Texture2D" uid="uid://iy2asncmypiy" path="res://bouncers/Skærmbillede 2024-11-07 171030.png" id="18_c2rqn"]
+[ext_resource type="ArrayMesh" uid="uid://cegsu46m6pla4" path="res://bouncers/low_poly_earth.obj" id="19_c8aei"]
+[ext_resource type="ArrayMesh" uid="uid://dgjgpvxrj7dii" path="res://bouncers/bracky.obj" id="20_axsbq"]
+[ext_resource type="ArrayMesh" uid="uid://chwk6wdp2msdn" path="res://bouncers/brick_guy_face.obj" id="21_5vsub"]
+[ext_resource type="ArrayMesh" uid="uid://boramxw8duqlo" path="res://bouncers/anti_gravity_ball.obj" id="22_dryef"]
+[ext_resource type="ArrayMesh" uid="uid://dy7ydraue7ss5" path="res://bouncers/anti_gravity_ring2.obj" id="23_cbgnh"]
+[ext_resource type="Texture2D" uid="uid://boasoibq1dkpr" path="res://bouncers/-0000FF.webp" id="24_863aw"]
+[ext_resource type="Script" path="res://bouncers/computers.gd" id="25_euqpt"]
+[ext_resource type="Texture2D" uid="uid://bgxpwevokt3wo" path="res://bouncers/Skærmbillede 2024-11-12 090819.png" id="25_g1ygc"]
+[ext_resource type="ArrayMesh" uid="uid://dujmqp24ekjti" path="res://bouncers/spiky_tree.obj" id="26_4sfcw"]
+[ext_resource type="Texture2D" uid="uid://1u8xrx3t7l7a" path="res://bouncers/Skærmbillede 2024-11-07 184146.png" id="27_60oti"]
+[ext_resource type="ArrayMesh" uid="uid://bu1y3uyqjmmqs" path="res://bouncers/beauteful_art.obj" id="28_byn7y"]
+[ext_resource type="PackedScene" uid="uid://xm0f2spqacin" path="res://coin.glb" id="29_xc23b"]
+[ext_resource type="Texture2D" uid="uid://d345ld5mryyli" path="res://coin_image.png" id="30_trb8t"]
+[ext_resource type="Script" path="res://coin_number.gd" id="31_i6pel"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v28vp"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_pldo2"]
+sky_material = SubResource("ProceduralSkyMaterial_v28vp")
+
+[sub_resource type="Environment" id="Environment_ciuks"]
+background_mode = 2
+sky = SubResource("Sky_pldo2")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jg0q"]
+resource_name = "Material"
+cull_mode = 2
+albedo_color = Color(0.90681, 0.434547, 0, 1)
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qfh3k"]
+resource_name = "Material.014"
+cull_mode = 2
+albedo_color = Color(0.630679, 0.302789, 0, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fkhlb"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 2),
+"format": 34896613377,
+"index_count": 588,
+"index_data": PackedByteArray("eQAGAHoAeQACAAYAAwAGAAIAAwAHAAYAggAEAIAAggAFAAQAeAADAHsAeAAHAAMAewACAHkAewADAAIABQAAAAQABQABAAAASwAJAEkASwALAAkASAALAEsASAAIAAsARgAKAEQARgAIAAoASQAKAEoASQAJAAoAbgAOAGwAbgAMAA4AawANAGkAawAPAA0AaAAPAGsAaAAMAA8AaQAOAGoAaQANAA4AYQAQAGIAYQATABAAYAARAGMAYAASABEAYwATAGEAYwARABMAZgAQAGQAZgASABAAWQAUAFoAWQAXABQAWAAVAFsAWAAWABUAWwAXAFkAWwAVABcAVgAUAFQAVgAWABQATgAaAEwATgAYABoAUQAaAFIAUQAZABoAUAAbAFMAUAAYABsAUwAZAFEAUwAbABkASAAeAEoASAAcAB4ATwAeAEwATwAdAB4ATgAfAE0ATgAcAB8ATQAdAE8ATQAfAB0ARQAjAEcARQAhACMARgAhAEUARgAiACEARwAgAEQARwAjACAAYAAgAGIAYAAiACAAaAAmAGoAaAAkACYAZwAmAGQAZwAlACYAZgAnAGUAZgAkACcAZQAlAGcAZQAnACUAdgAqAHQAdgAoACoAcwApAHEAcwArACkAcAArAHMAcAAoACsAcQAqAHIAcQApACoAbwAsAGwAbwAvACwAbgAtAG0AbgAuAC0AbQAvAG8AbQAtAC8AcAAsAHIAcAAuACwAVQAzAFcAVQAxADMAVgAxAFUAVgAyADEAVwAwAFQAVwAzADAAUAAwAFIAUAAyADAAfwA3AH0AfwA1ADcAfAA1AH8AfAA2ADUAfQA0AH4AfQA3ADQAXgA0AFwAXgA2ADQAWAA6AFoAWAA4ADoAXQA5AF8AXQA7ADkAXgA7AF0AXgA4ADsAXwA6AFwAXwA5ADoAgwA8AIAAgwA/ADwAggA9AIEAggA+AD0AgQA/AIMAgQA9AD8AfAA8AH4AfAA+ADwAeABCAHoAeABAAEIAdQBBAHcAdQBDAEEAdgBDAHUAdgBAAEMAdwBCAHQAdwBBAEIACABFAAsACABGAEUAIgBEACAAIgBGAEQACABKAAoACABIAEoAHABLAB8AHABIAEsAGABNABsAGABOAE0AHABMAB4AHABOAEwAGABSABoAGABQAFIAMgBTADEAMgBQAFMAFgBVABUAFgBWAFUAMgBUADAAMgBWAFQAFgBaABQAFgBYAFoAOABbADsAOABYAFsANgBdADUANgBeAF0AOABcADoAOABeAFwAEgBiABAAEgBgAGIAIgBjACEAIgBgAGMAEgBlABEAEgBmAGUAJABkACYAJABmAGQADABqAA4ADABoAGoAJABrACcAJABoAGsADABtAA8ADABuAG0ALgBsACwALgBuAGwAKAByACoAKABwAHIALgBzAC0ALgBwAHMAKAB1ACsAKAB2AHUAQAB0AEIAQAB2AHQABwB6AAYABwB4AHoAQAB7AEMAQAB4AHsANgB+ADQANgB8AH4APgB/AD0APgB8AH8ABQCBAAEABQCCAIEAPgCAADwAPgCCAIAA"),
+"lods": [1e-10, PackedByteArray("eQAGAHoAeQACAAYAAwAGAAIAAwAHAAYAfAAEAIAAfAAFAAQAfACAADwAfAA8AH4AfAB+ADQAfAA0AFwAfABcADoAfAA6AFoAfABaABQAfAAUAFQAfABUADAAfAAwAFIAfABSABoAfAAaAEwAfABMAB4AfAAeAEoAfABKAAoAfAAKAEQAfABEACAAfAAgAGIAfABiABAAfAAQAGQADAB8AGQADABkACYADAAmAGoADABqAA4ADAAOAGwADABsACwADAAsAHIADAByACoADAAqAHQADAB0AEIADABCAHoABwAMAHoABwB6AAYADAADAHsADAAHAAMADAB7AEMADABDAHUADAB1ACsADAArAHMADABzAC0ADAAtAG0ADABtAA8ADAAPAGsADABrACcAfAAMACcAfAAnAGUAfABlABEAfAARAGMAfABjACEAfAAhAEUAfABFAAsAfAALAEsAfABLAB8AfAAfAE0AfABNABsAfAAbAFMAfABTADEAfAAxAFUAfABVABUAfAAVAFsAfABbADsAfAA7AF0AfABdADUAfAA1AH8AfAB/AD0AfAA9AIEABQB8AIEABQCBAAEAewACAHkAewADAAIABQAAAAQABQABAAAASwAJAEkASwALAAkASQAKAEoASQAJAAoAawANAGkAawAPAA0AaQAOAGoAaQANAA4AYQAQAGIAYQATABAAYwATAGEAYwARABMAWQAUAFoAWQAXABQAWwAXAFkAWwAVABcAUQAaAFIAUQAZABoAUwAZAFEAUwAbABkATwAeAEwATwAdAB4ATQAdAE8ATQAfAB0ARQAjAEcARQAhACMARwAgAEQARwAjACAAZwAmAGQAZwAlACYAZQAlAGcAZQAnACUAcwApAHEAcwArACkAcQAqAHIAcQApACoAbwAsAGwAbwAvACwAbQAvAG8AbQAtAC8AVQAzAFcAVQAxADMAVwAwAFQAVwAzADAAfwA3AH0AfwA1ADcAfQA0AH4AfQA3ADQAXQA5AF8AXQA7ADkAXwA6AFwAXwA5ADoAgwA8AIAAgwA/ADwAgQA/AIMAgQA9AD8AdQBBAHcAdQBDAEEAdwBCAHQAdwBBAEIA")],
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 132,
+"vertex_data": PackedByteArray("/v/+/wAAAAD+/wAAAAAAAP7//v///wAA/v8AAP//AAAAAP7/AAAAAAAAAAAAAAAAAAD+////AAAAAAAA//8AAAAAAAD/fwAA/v/+//9/AAAAAP7//38AAP7/AAD/fwAAAAAAAP+/AAD+//7//78AAAAA/v//vwAA/v8AAP+/AAAAAP7//58AAP7/AAD/nwAAAAAAAP+fAAD+//7//58AAAAA/v//PwAA/v8AAP8/AAAAAAAA/z8AAP7//v//PwAAAAAAAP9fAAD+//7//18AAAAA/v//XwAA/v8AAP9fAAAAAAAA/28AAP7//v//bwAAAAD+//9vAAD+/wAA/28AAAAA/v//jwAA/v8AAP+PAAAAAAAA/48AAP7//v//jwAAAAAAAP+vAAD+//7//68AAAAA/v//rwAA/v8AAP+vAAAAAAAA/98AAP7//v//3wAAAAD+///fAAD+/wAA/98AAAAA/v//zwAA/v8AAP/PAAAAAAAA/88AAP7//v//zwAAAAD+//9PAAD+/wAA/08AAAAAAAD/TwAA/v/+//9PAAAAAP7//x8AAP7/AAD/HwAAAAAAAP8fAAD+//7//x8AAAAAAAA/MAAA/v/+/z8wAAAAAP7/PzAAAP7/AAA/MAAAAAD+/xQRAAD+/wAAFBEAAAAAAAAUEQAA/v/+/xQRAAAAAAAA/+8AAP7//v//7wAAAAD+///vAAD+/wAA/+8AAAAA/v//hwAA/v8AAP+HAAAAAAAA/4cAAP7//v//hwAAAAAAAP93AAD+//7//3cAAAAA/v//dwAA/v8AAP93AAAAAP7//2cAAP7/AAD/ZwAAAAAAAP9nAAD+//7//2cAAAAAAACEWAAA/v/+/4RYAAAAAP7/hFgAAP7/AACEWAAAAAD+//9HAAD+/wAA/0cAAAAAAAD/RwAA/v/+//9HAAAAAAAAHzgAAP7//v8fOAAAAAD+/x84AAD+/wAAHzgAAAAA/v8fKAAA/v8AAB8oAAAAAAAAHygAAP7//v8fKAAAAAAAAP+XAAD+//7//5cAAAAA/v//lwAA/v8AAP+XAAAAAP7//6cAAP7/AAD/pwAAAAAAAP+nAAD+//7//6cAAAAAAAD/twAA/v/+//+3AAAAAP7//7cAAP7/AAD/twAAAAD+///HAAD+/wAA/8cAAAAAAAD/xwAA/v/+///HAAAAAAAA/9cAAP7//v//1wAAAAD+///XAAD+/wAA/9cAAAAA/v//5wAA/v8AAP/nAAAAAAAA/+cAAP7//v//5wAAAAAAAP/3AAD+//7///cAAAAA/v//9wAA/v8AAP/3AAAAAAAAihgAAP7//v+KGAAAAAD+/4oYAAD+/wAAihgAAAAA/v+KCAAA/v8AAIoIAAAAAAAAiggAAP7//v+KCAAA")
+}, {
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 1.9375),
+"format": 34896613377,
+"index_count": 192,
+"index_data": PackedByteArray("AwAwAAQAAwAyADAABQAyAAMABQAxADIAEgA0ABMAEgAzADQAFAAzABIAFAA1ADMAEQA4AA8AEQA3ADgADwA2ABAADwA4ADYAIgA5ACMAIgA7ADkAIwA6ACEAIwA5ADoADgA8AAwADgA+ADwADQA+AA4ADQA9AD4AKQA/ACcAKQBBAD8AJwBAACgAJwA/AEAAJgBCACQAJgBEAEIAJQBEACYAJQBDAEQAFgBFABcAFgBHAEUAFwBGABUAFwBFAEYACgBKAAsACgBJAEoACwBIAAkACwBKAEgAGABMABkAGABLAEwAGgBLABgAGgBNAEsACABQAAYACABPAFAABgBOAAcABgBQAE4AIABSAB4AIABRAFIAHwBRACAAHwBTAFEAGwBUABwAGwBWAFQAHQBWABsAHQBVAFYALwBXAC0ALwBZAFcALQBYAC4ALQBXAFgALABbACoALABaAFsAKwBaACwAKwBcAFoAAQBfAAAAAQBeAF8AAABdAAIAAABfAF0A"),
+"name": "Material.014",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 96,
+"vertex_data": PackedByteArray("/v/+/wAAAAD+/wAAAAAAAAAA/v8AAAAA/v/+/yCEAAAAAP7/IIQAAP7/AAAghAAA/v/+/zDGAAAAAP7/MMYAAP7/AAAwxgAAAAD+/yilAAD+/wAAKKUAAP7//v8opQAAAAD+/xBCAAD+/wAAEEIAAP7//v8QQgAA/v/+/xhjAAAAAP7/GGMAAP7/AAAYYwAA/v/+/5xzAAAAAP7/nHMAAP7/AACccwAAAAD+/6SUAAD+/wAApJQAAP7//v+klAAA/v/+/6y1AAAAAP7/rLUAAP7/AACstQAA/v/+/zjnAAAAAP7/OOcAAP7/AAA45wAAAAD+/7TWAAD+/wAAtNYAAP7//v+01gAAAAD+/5RSAAD+/wAAlFIAAP7//v+UUgAAAAD+/wghAAD+/wAACCEAAP7//v8IIQAA/v/+/80xAAAAAP7/zTEAAP7/AADNMQAAAAD+/6ERAAD+/wAAoREAAP7//v+hEQAA/v/+/7z3AAAAAP7/vPcAAP7/AAC89wAAAAD+/2KMAAD+/wAAYowAAP7//v9ijAAA/v/+/957AAAAAP7/3nsAAP7/AADeewAAAAD+/1prAAD+/wAAWmsAAP7//v9aawAA/v/+/19bAAAAAP7/X1sAAP7/AABfWwAAAAD+/1JKAAD+/wAAUkoAAP7//v9SSgAA/v/+/+85AAAAAP7/7zkAAP7/AADvOQAAAAD+/2opAAD+/wAAaikAAP7//v9qKQAA/v/+/+acAAAAAP7/5pwAAP7/AADmnAAAAAD+/2qtAAD+/wAAaq0AAP7//v9qrQAA/v/+/+69AAAAAP7/7r0AAP7/AADuvQAAAAD+/3LOAAD+/wAAcs4AAP7//v9yzgAA/v/+//beAAAAAP7/9t4AAP7/AAD23gAAAAD+/3rvAAD+/wAAeu8AAP7//v967wAA/v/+////AAAAAP7///8AAP7/AAD//wAA/v/+/1QZAAAAAP7/VBkAAP7/AABUGQAAAAD+/9AIAAD+/wAA0AgAAP7//v/QCAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xbelx"]
+resource_name = "shop_meny_stomp2_Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 2),
+"attribute_data": PackedByteArray("/5//f/9f/3//X/9//5//P/+f/z//n/8//1//P/9f/z//X/8//5//v/+f/7//X/+//x//f/9f/7//n////58AAP/f/z//X////x//P/9fAAD/X//f/x//X/+f/1//n/9f/5//3//f/1//X/9f/1//X/9f/+//H/9P/5//T/+f/0//n//v/9//T/9f/0//X/9P/5//5//f/1f/X/9X/1//V/9f/+f/H/9X/5//V/+f/1f/n//P/9//b/9f/2//X/9v/1//z/8f/2//n/9v/5//b/9f/9f/H/9n/5//Z/+f/2f/n//X/9//Z/9f/2f/X/9n/1//2/8f/2P/n/9j/5//Y/+f/9v/3/9j/1//Y/9f/2P/n//j/9//W/9f/1v/X/9b/1//4/8f/1v/n/9b/5//W/9f/+v/H/9T/5//U/+f/1P/n//r/9//U/9f/1P/X/9T/1//9/8f/0f/n/9H/5//R/+f//f/3/9H/1//R/9f/0f/n//z/9//S/9f/0v/X/9L/1//8/8f/0v/n/9L/5//S/+f/9P/3/9r/1//a/9f/2v/X//T/x//a/+f/2v/n/9r/5//x//f/3f/X/93/1//d/9f/8f/H/93/5//d/+f/3f/Xw/M/x/vc/+f73P/n+9z/58PzP/f73P/X+9z/1/vc/+fRMT/37p7/1+6e/9funv/X0TE/x+6e/+funv/n7p7/1//+/8f/0P/n/9D/5//Q/+f//v/3/9D/1//Q/9f/0P/n//h/9//Xf9f/13/X/9d/1//4f8f/13/n/9d/5//Xf9f/93/H/9h/5//Yf+f/2H/n//d/9//Yf9f/2H/X/9h/5//2f/f/2X/X/9l/1//Zf9f/9n/H/9l/5//Zf+f/2X/XyDW/x/eaf+f3mn/n95p/58g1v/f3mn/X95p/1/eaf+f/9H/3/9t/1//bf9f/23/X//R/x//bf+f/23/n/9t/18Hzv8f93H/n/dx/5/3cf+fB87/3/dx/1/3cf9f93H/nwfK/9/3df9f93X/X/d1/18Hyv8f93X/n/d1/5/3df9f/+X/H/9Z/5//Wf+f/1n/n//l/9//Wf9f/1n/X/9Z/5//6f/f/1X/X/9V/1//Vf9f/+n/H/9V/5//Vf+f/1X/X//t/x//Uf+f/1H/n/9R/5//7f/f/1H/X/9R/1//Uf+f//H/3/9N/1//Tf9f/03/X//x/x//Tf+f/03/n/9N/1//9f8f/0n/n/9J/5//Sf+f//X/3/9J/1//Sf9f/0n/n//5/9//Rf9f/0X/X/9F/1//+f8f/0X/n/9F/5//Rf9f//3/H/9B/5//Qf+f/0H/n//9/9//Qf9f/0H/X/9B/18hxv8f3Hn/n9x5/5/cef+fIcb/39x5/1/cef9f3Hn/nyHC/9/cff9f3H3/X9x9/18hwv8f3H3/n9x9/5/cfQ=="),
+"format": 34896613399,
+"index_count": 588,
+"index_data": PackedByteArray("9gAQAPkA9gAEABAABwAPAAMABwATAA8ACAEJAAQBCAELAAkA9QAGAPoA9QASAAYA+wAFAPcA+wAIAAUADQAAAAoADQACAAAAmwAXAJcAmwAbABcAlQAaAJoAlQAVABoAkAAYAIwAkAAUABgAlgAZAJkAlgAWABkA4AAgANwA4AAcACAA2wAfANcA2wAjAB8A1QAiANoA1QAdACIA1gAhANkA1gAeACEAxgAlAMkAxgAqACUAxQAmAMoAxQApACYAywArAMcAywAnACsA0AAkAMwA0AAoACQAtgAtALkAtgAyAC0AtQAuALoAtQAxAC4AuwAzALcAuwAvADMAsAAsAKwAsAAwACwAoAA4AJwAoAA0ADgApgA5AKkApgA2ADkApQA6AKoApQA1ADoAqwA3AKcAqwA7ADcAlABAAJgAlAA8AEAAogBBAJ0AogA+AEEAoQBCAJ4AoQA9AEIAnwA/AKMAnwBDAD8AjwBLAJMAjwBHAEsAkQBGAI4AkQBJAEYAkgBFAI0AkgBKAEUAxABEAMgAxABIAEQA1ABQANgA1ABMAFAA0gBRAM0A0gBOAFEA0QBSAM4A0QBNAFIAzwBPANMAzwBTAE8A8ABYAOwA8ABUAFgA6wBXAOcA6wBbAFcA5QBaAOoA5QBVAFoA5gBZAOkA5gBWAFkA4gBdAN0A4gBiAF0A4QBeAN4A4QBhAF4A3wBjAOMA3wBfAGMA5ABcAOgA5ABgAFwArwBrALMArwBnAGsAsQBmAK4AsQBpAGYAsgBlAK0AsgBqAGUApABkAKgApABoAGQAAwFzAP8AAwFvAHMA/QBuAAIB/QBxAG4A/gBtAAEB/gByAG0AwABsALwAwABwAGwAtAB4ALgAtAB0AHgAvwB3AMMAvwB7AHcAwQB6AL4AwQB1AHoAwgB5AL0AwgB2AHkACgF9AAUBCgGCAH0ACQF+AAYBCQGBAH4ABwGDAAsBBwF/AIMA/AB8AAAB/ACAAHwA9ACIAPgA9ACEAIgA7wCHAPMA7wCLAIcA8QCKAO4A8QCFAIoA8gCJAO0A8gCGAIkAFQCOABoAFQCRAI4ASACMAEQASACQAIwAFACYABgAFACUAJgAPQCaAEIAPQCVAJoANQCeADoANQChAJ4APACcAEAAPACgAJwANACoADgANACkAKgAaQCqAGYAaQClAKoAMQCuAC4AMQCxAK4AaACsAGQAaACwAKwAMAC4ACwAMAC0ALgAdQC6AHoAdQC1ALoAcQC+AG4AcQDBAL4AdAC8AHgAdADAALwAKADIACQAKADEAMgASQDKAEYASQDFAMoAKQDOACYAKQDRAM4ATADMAFAATADQAMwAHADYACAAHADUANgATQDaAFIATQDVANoAHQDeACIAHQDhAN4AYADcAFwAYADgANwAVADoAFgAVADkAOgAYQDqAF4AYQDlAOoAVQDuAFoAVQDxAO4AhADsAIgAhADwAOwAEQD4AA4AEQD0APgAhQD6AIoAhQD1APoAcAAAAWwAcAD8AAABgQACAX4AgQD9AAIBDAAGAQEADAAJAQYBgAAEAXwAgAAIAQQB"),
+"lods": [1e-10, PackedByteArray("9gAQAPkA9gAEABAABwAPAAMABwATAA8A/AAJAAQB/AALAAkA/AAEAXwA/AB8AAAB/AAAAWwA/ABsALwA/AC8AHgA/AB4ALgA/AC4ACwA/AAsAKwA/ACsAGQA/ABkAKgA/ACoADgA/AA4AJwA/ACcAEAA/ABAAJgA/ACYABgA/AAYAIwA/ACMAEQA/ABEAMgA/ADIACQA/AAkAMwAHAD8AMwAHADMAFAAHABQANgAHADYACAAHAAgANwAHADcAFwAHABcAOgAHADoAFgAHABYAOwAHADsAIgAHACIAPgAEQAcAPgAEQD4AA4AHQAGAPoAHQASAAYAHQD6AIoAHQCKAO4AHQDuAFoAHQBaAOoAHQDqAF4AHQBeAN4AHQDeACIAHQAiANoAHQDaAFIA/QAdAFIA/QBSAM4A/QDOACYA/QAmAMoA/QDKAEYA/QBGAI4A/QCOABoA/QAaAJoA/QCaAEIA/QBCAJ4A/QCeADoA/QA6AKoA/QCqAGYA/QBmAK4A/QCuAC4A/QAuALoA/QC6AHoA/QB6AL4A/QC+AG4A/QBuAAIB/QACAX4A/QB+AAYBDAD9AAYBDAAGAQEA+wAFAPcA+wAIAAUADQAAAAoADQACAAAAmwAXAJcAmwAbABcAlgAZAJkAlgAWABkA2wAfANcA2wAjAB8A1gAhANkA1gAeACEAxgAlAMkAxgAqACUAywArAMcAywAnACsAtgAtALkAtgAyAC0AuwAzALcAuwAvADMApgA5AKkApgA2ADkAqwA3AKcAqwA7ADcAogBBAJ0AogA+AEEAnwA/AKMAnwBDAD8AjwBLAJMAjwBHAEsAkgBFAI0AkgBKAEUA0gBRAM0A0gBOAFEAzwBPANMAzwBTAE8A6wBXAOcA6wBbAFcA5gBZAOkA5gBWAFkA4gBdAN0A4gBiAF0A3wBjAOMA3wBfAGMArwBrALMArwBnAGsAsgBlAK0AsgBqAGUAAwFzAP8AAwFvAHMA/gBtAAEB/gByAG0AvwB3AMMAvwB7AHcAwgB5AL0AwgB2AHkACgF9AAUBCgGCAH0ABwGDAAsBBwF/AIMA7wCHAPMA7wCLAIcA8gCJAO0A8gCGAIkA")],
+"material": SubResource("StandardMaterial3D_5jg0q"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 268,
+"vertex_data": PackedByteArray("/v/+/wAA///+/wAAAAD/v/7/AAAAAP///v/+/////7/+//7///////7//v///1TV/v8AAP///7/+/wAA////v/7/AAD//1TVAAD+/wAAVNUAAP7/AAD//wAAAAAAAFTVAAAAAAAA/78AAAAAAAD//wAA/v///1TVAAD+/////78AAP7//////wAAAAD//1TVAAAAAP///78AAAAA////vwAAAAD/f1TVAAAAAP9//7/+//7//3////7//v//f1TVAAD+//9/VNUAAP7//3////7/AAD/f/+//v8AAP9/VNUAAAAA/79U1QAAAAD/v/+//v/+//+////+//7//79U1QAA/v//v1TVAAD+//+////+/wAA/7//v/7/AAD/v1TVAAD+//+fVNUAAP7//5////7/AAD/n/+//v8AAP+fVNUAAAAA/59U1QAAAAD/n/+//v/+//+f///+//7//59U1QAA/v//P1TVAAD+//8////+/wAA/z//v/7/AAD/P1TVAAAAAP8/VNUAAAAA/z//v/7//v//P////v/+//8/VNUAAAAA/19U1QAAAAD/X/+//v/+//9f///+//7//19U1QAA/v//X1TVAAD+//9f///+/wAA/1//v/7/AAD/X1TVAAAAAP9vVNUAAAAA/2//v/7//v//b////v/+//9vVNUAAP7//29U1QAA/v//b////v8AAP9v/7/+/wAA/29U1QAA/v//j1TVAAD+//+P///+/wAA/4//v/7/AAD/j1TVAAAAAP+PVNUAAAAA/4//v/7//v//j////v/+//+PVNUAAAAA/69U1QAAAAD/r/+//v/+//+v///+//7//69U1QAA/v//r1TVAAD+//+v///+/wAA/6//v/7/AAD/r1TVAAAAAP/fVNUAAAAA/9//v/7//v//3////v/+///fVNUAAP7//99U1QAA/v//3////v8AAP/f/7/+/wAA/99U1QAA/v//z1TVAAD+///P///+/wAA/8//v/7/AAD/z1TVAAAAAP/PVNUAAAAA/8//v/7//v//z////v/+///PVNUAAP7//09U1QAA/v//T////v8AAP9P/7/+/wAA/09U1QAAAAD/T1TVAAAAAP9P/7/+//7//0////7//v//T1TVAAD+//8fVNUAAP7//x////7/AAD/H/+//v8AAP8fVNUAAAAA/x9U1QAAAAD/H/+//v/+//8f///+//7//x9U1QAAAAA/MFTVAAAAAD8w/7/+//7/PzD///7//v8/MFTVAAD+/z8wVNUAAP7/PzD///7/AAA/MP+//v8AAD8wVNUAAP7/FBFU1QAA/v8UEf///v8AABQR/7/+/wAAFBFU1QAAAAAUEVTVAAAAABQR/7/+//7/FBH///7//v8UEVTVAAAAAP/vVNUAAAAA/+//v/7//v//7////v/+///vVNUAAP7//+9U1QAA/v//7////v8AAP/v/7/+/wAA/+9U1QAA/v//h1TVAAD+//+H///+/wAA/4f/v/7/AAD/h1TVAAAAAP+HVNUAAAAA/4f/v/7//v//h////v/+//+HVNUAAAAA/3dU1QAAAAD/d/+//v/+//93///+//7//3dU1QAA/v//d1TVAAD+//93///+/wAA/3f/v/7/AAD/d1TVAAD+//9nVNUAAP7//2f///7/AAD/Z/+//v8AAP9nVNUAAAAA/2dU1QAAAAD/Z/+//v/+//9n///+//7//2dU1QAAAACEWFTVAAAAAIRY/7/+//7/hFj///7//v+EWFTVAAD+/4RYVNUAAP7/hFj///7/AACEWP+//v8AAIRYVNUAAP7//0dU1QAA/v//R////v8AAP9H/7/+/wAA/0dU1QAAAAD/R1TVAAAAAP9H/7/+//7//0f///7//v//R1TVAAAAAB84VNUAAAAAHzj/v/7//v8fOP///v/+/x84VNUAAP7/HzhU1QAA/v8fOP///v8AAB84/7/+/wAAHzhU1QAA/v8fKFTVAAD+/x8o///+/wAAHyj/v/7/AAAfKFTVAAAAAB8oVNUAAAAAHyj/v/7//v8fKP///v/+/x8oVNUAAAAA/5dU1QAAAAD/l/+//v/+//+X///+//7//5dU1QAA/v//l1TVAAD+//+X///+/wAA/5f/v/7/AAD/l1TVAAD+//+nVNUAAP7//6f///7/AAD/p/+//v8AAP+nVNUAAAAA/6dU1QAAAAD/p/+//v/+//+n///+//7//6dU1QAAAAD/t1TVAAAAAP+3/7/+//7//7f///7//v//t1TVAAD+//+3VNUAAP7//7f///7/AAD/t/+//v8AAP+3VNUAAP7//8dU1QAA/v//x////v8AAP/H/7/+/wAA/8dU1QAAAAD/x1TVAAAAAP/H/7/+//7//8f///7//v//x1TVAAAAAP/XVNUAAAAA/9f/v/7//v//1////v/+///XVNUAAP7//9dU1QAA/v//1////v8AAP/X/7/+/wAA/9dU1QAA/v//51TVAAD+///n///+/wAA/+f/v/7/AAD/51TVAAAAAP/nVNUAAAAA/+f/v/7//v//5////v/+///nVNUAAAAA//dU1QAAAAD/9/+//v/+///3///+//7///dU1QAA/v//91TVAAD+///3///+/wAA//f/v/7/AAD/91TVAAAAAIoYVNUAAAAAihj/v/7//v+KGP///v/+/4oYVNUAAP7/ihhU1QAA/v+KGP///v8AAIoY/7/+/wAAihhU1QAA/v+KCFTVAAD+/4oI///+/wAAigj/v/7/AACKCFTVAAAAAIoIVNUAAAAAigj/v/7//v+KCP///v/+/4oIVNX/v/+/AAD/f/+//7///////3//v6oqqioAAP9//////6oqqipU1VTV/7//v1TVVNUAAP9//7//v1TVVNX//////3//v1TVVNUAAP9//////1TVVNUAAP9//3//v6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNUAAP9//3//v6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNUAAP9//3//v6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNUAAP9//3//v6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNUAAP9//3//v6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNUAAP9//3//v6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNUAAP9//3//v6oqqipU1VTV/3//vwAA/3+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNUAAP9//3//v6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1QAA/3//f/+/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoqVNVU1f9//78AAP9/qiqqKlTVVNX/f/+/AAD/f6oqqipU1VTVAAD/f/9//7+qKqoq")
+}, {
+"aabb": AABB(-1, -1, -1, 2.00001, 2.00001, 1.9375),
+"attribute_data": PackedByteArray("/5//f/+f/3//X/9//9//f/+f/1//n/9f/9//X/9f/1//n/9P/5//T//f/0//X/9P/9//V/9f/1f/n/9X/5//V//f/2//X/9v/5//b/+f/2//n/9n/5//Z//f/2f/X/9n/5//Y/+f/2P/3/9j/1//Y//f/1v/X/9b/5//W/+f/1v/n/9T/5//U//f/1P/X/9T/5//R/+f/0f/3/9H/1//R//f/0v/X/9L/5//S/+f/0v/3/9r/1//a/+f/2v/n/9r/9//d/9f/3f/n/93/5//d/+f73P/n+9z/9/vc/9f73P/37p7/1+6e/+funv/n7p7/5//Q/+f/0P/3/9D/1//Q//f/13/X/9d/5//Xf+f/13/n/9h/5//Yf/f/2H/X/9h/9//Zf9f/2X/n/9l/5//Zf+f3mn/n95p/9/eaf9f3mn/3/9t/1//bf+f/23/n/9t/5/3cf+f93H/3/dx/1/3cf/f93X/X/d1/5/3df+f93X/n/9Z/5//Wf/f/1n/X/9Z/9//Vf9f/1X/n/9V/5//Vf+f/1H/n/9R/9//Uf9f/1H/3/9N/1//Tf+f/03/n/9N/5//Sf+f/0n/3/9J/1//Sf/f/0X/X/9F/5//Rf+f/0X/n/9B/5//Qf/f/0H/X/9B/5/cef+f3Hn/39x5/1/cef/f3H3/X9x9/5/cff+f3H0="),
+"format": 34896613399,
+"index_count": 192,
+"index_data": PackedByteArray("BABAAAYABABCAEAABwBDAAUABwBBAEMAGABGABoAGABEAEYAGwBFABkAGwBHAEUAFwBLABUAFwBJAEsAFABIABYAFABKAEgALQBNAC8ALQBPAE0ALgBOACwALgBMAE4AEgBQABAAEgBSAFAAEQBTABMAEQBRAFMANwBVADUANwBXAFUANABWADYANABUAFYAMgBYADAAMgBaAFgAMQBbADMAMQBZAFsAHQBdAB8AHQBfAF0AHgBeABwAHgBcAF4ADQBjAA8ADQBhAGMADgBgAAwADgBiAGAAIABmACIAIABkAGYAIwBlACEAIwBnAGUACwBrAAkACwBpAGsACABoAAoACABqAGgAKgBuACgAKgBsAG4AKQBtACsAKQBvAG0AJABwACYAJAByAHAAJwBzACUAJwBxAHMAPwB1AD0APwB3AHUAPAB2AD4APAB0AHYAOgB6ADgAOgB4AHoAOQB5ADsAOQB7AHkAAgB/AAEAAgB9AH8AAAB8AAMAAAB+AHwA"),
+"material": SubResource("StandardMaterial3D_qfh3k"),
+"name": "Material.014",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 128,
+"vertex_data": PackedByteArray("/v/+/wAA///+//7/AABU1f7/AAAAAFTVAAD+/wAA///+//7/IIT///7//v8ghFTVAAD+/yCE///+/wAAIIRU1f7//v8wxv///v/+/zDGVNUAAP7/MMb///7/AAAwxlTVAAD+/yil///+/wAAKKVU1f7//v8opf///v/+/yilVNUAAP7/EEL///7/AAAQQlTV/v/+/xBC///+//7/EEJU1f7//v8YY////v/+/xhjVNUAAP7/GGP///7/AAAYY1TV/v/+/5xz///+//7/nHNU1QAA/v+cc////v8AAJxzVNUAAP7/pJT///7/AACklFTV/v/+/6SU///+//7/pJRU1f7//v+stf///v/+/6y1VNUAAP7/rLX///7/AACstVTV/v/+/zjn///+//7/OOdU1QAA/v845////v8AADjnVNUAAP7/tNb///7/AAC01lTV/v/+/7TW///+//7/tNZU1QAA/v+UUv///v8AAJRSVNX+//7/lFL///7//v+UUlTVAAD+/wgh///+/wAACCFU1f7//v8IIf///v/+/wghVNX+//7/zTH///7//v/NMVTVAAD+/80x///+/wAAzTFU1QAA/v+hEf///v8AAKERVNX+//7/oRH///7//v+hEVTV/v/+/7z3///+//7/vPdU1QAA/v+89////v8AALz3VNUAAP7/Yoz///7/AABijFTV/v/+/2KM///+//7/YoxU1f7//v/ee////v/+/957VNUAAP7/3nv///7/AADee1TVAAD+/1pr///+/wAAWmtU1f7//v9aa////v/+/1prVNX+//7/X1v///7//v9fW1TVAAD+/19b///+/wAAX1tU1QAA/v9SSv///v8AAFJKVNX+//7/Ukr///7//v9SSlTV/v/+/+85///+//7/7zlU1QAA/v/vOf///v8AAO85VNUAAP7/ain///7/AABqKVTV/v/+/2op///+//7/ailU1f7//v/mnP///v/+/+acVNUAAP7/5pz///7/AADmnFTVAAD+/2qt///+/wAAaq1U1f7//v9qrf///v/+/2qtVNX+//7/7r3///7//v/uvVTVAAD+/+69///+/wAA7r1U1QAA/v9yzv///v8AAHLOVNX+//7/cs7///7//v9yzlTV/v/+//be///+//7/9t5U1QAA/v/23v///v8AAPbeVNUAAP7/eu////7/AAB671TV/v/+/3rv///+//7/eu9U1f7//v///////v/+////VNUAAP7///////7/AAD//1TV/v/+/1QZ///+//7/VBlU1QAA/v9UGf///v8AAFQZVNUAAP7/0Aj///7/AADQCFTV/v/+/9AI///+//7/0AhU1f9//7+qKqoqqiqqKv9//7//f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq/3//v6oqqir/f/+/qiqqKv9//7+qKqoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fkhlb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vhq7"]
+albedo_texture = ExtResource("18_c2rqn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svykr"]
+albedo_texture = ExtResource("14_0rgoo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fcgo5"]
+albedo_texture = ExtResource("16_l3yor")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bw321"]
+albedo_texture = ExtResource("12_0aj31")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x4fg1"]
+albedo_texture = ExtResource("15_d86qe")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1babo"]
+albedo_texture = ExtResource("24_863aw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_faivl"]
+albedo_texture = ExtResource("24_863aw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uq1c1"]
+cull_mode = 2
+albedo_color = Color(0.541176, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1mh7"]
+albedo_texture = ExtResource("8_gfpr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qvbwj"]
+albedo_texture = ExtResource("25_g1ygc")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r8sjh"]
+albedo_texture = ExtResource("27_60oti")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yq678"]
+albedo_color = Color(0.631373, 0.309804, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t0bvd"]
+material = SubResource("StandardMaterial3D_yq678")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gm1rq"]
+resource_name = "Material.022"
+cull_mode = 2
+albedo_color = Color(0.405675, 0.384077, 0.409089, 1)
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ui2ab"]
+resource_name = "Material.023"
+cull_mode = 2
+albedo_color = Color(0.642041, 0.642041, 0.642041, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_eyioe"]
+_surfaces = [{
+"aabb": AABB(-1.56226, -1.56226, -1, 3.12451, 2.78278, 2.00001),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AQAPAAUAAQAKAA8AAgAMAAYAAgAIAAwABgANAAcABgAMAA0ABAAJAAAABAAOAAkACQALAAoACQAIAAsADAAPAA0ADAAOAA8ACAAOAAwACAAJAA4ADQAKAAsADQAPAAoABQAOAAQABQAPAA4ABwALAAMABwANAAsAAwAIAAIAAwALAAgAAAAKAAEAAAAJAAoAAgARAAMAAgAQABEABwASAAYABwATABIABgAQAAIABgASABAAAwATAAcAAwARABMA"),
+"name": "Material.022",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("ES65M/7/AAARLrXr/v8AABEuuTMAAAAAES616wAAAADt0bkz/v8AAO3Rtev+/wAA7dG5MwAAAADt0bXrAAAAAAAAAAAAAAAAAAAAAP7/AAAAAP///v8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAP//AAD+/wAA//////7/AAARLrkz5/8AABEutevn/wAA7dG5M+f/AADt0bXr5/8AAA==")
+}, {
+"aabb": AABB(-1.38959, -1.33796, -15.9063, 2.77917, 2.47521, 15.0507),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AQAPAAUAAQAKAA8AAgAMAAYAAgAIAAwABgANAAcABgAMAA0ABAAJAAAABAAOAAkACQALAAoACQAIAAsADAAPAA0ADAAOAA8ACAAOAAwACAAJAA4ADQAKAAsADQAPAAoABQAOAAQABQAPAA4ABwALAAMABwANAAsAAwAIAAIAAwALAAgAAAAKAAEAAAAJAAoAAgARAAMAAgAQABEABwASAAYABwATABIABgAQAAIABgASABAAAwATAAcAAwARABMA"),
+"name": "Material.023",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("ES65M/7/AAARLrXr/v8AABEuuTMAAAAAES616wAAAADt0bkz/v8AAO3Rtev+/wAA7dG5MwAAAADt0bXrAAAAAAAAAAAAAAAAAAAAAP7/AAAAAP///v8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAP//AAD+/wAA//////7/AAARLrkz5/8AABEutevn/wAA7dG5M+f/AADt0bXr5/8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_t6wef"]
+resource_name = "shop_meny_stomp2_Cube_005"
+_surfaces = [{
+"aabb": AABB(-1.56226, -1.56226, -1, 3.12451, 2.78278, 2.00001),
+"attribute_data": PackedByteArray("/18AAP+fAAD/X/+//1//v/9f/7//n/+//5//v/+f/7//X/8//5//P/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/7//H/9//1//v/9f////H/8//18AAP+f////nwAA/9//P/+f/7//n/+//9//f/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/z//X/8//1//P/+f/z//n/8//5//P/9f/7//X/+//5//v/+f/7//X/9//1//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AQAlAAkAAQAXACUAAgAdAAsAAgASAB0ACwAfAA8ACwAdAB8ACAAVAAAACAAjABUAEwAZABYAEwAQABkAHgAnACEAHgAkACcAEQAiABwAEQAUACIAIAAYABsAIAAmABgACQAjAAgACQAlACMADwAaAAYADwAfABoABgASAAIABgAaABIAAAAXAAEAAAAVABcABAArAAcABAApACsADQAsAAoADQAuACwADAAoAAMADAAtACgABQAvAA4ABQAqAC8A"),
+"material": SubResource("StandardMaterial3D_gm1rq"),
+"name": "Material.022",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("ES65M/7//n8RLrXr/v/+fxEuuTMAAP//ES65MwAA/78RLrkzAAD/vxEutesAAP+/ES616wAA//8RLrXrAAD/v+3RuTP+//5/7dG16/7//n/t0bkzAAD/v+3RuTMAAP//7dG5MwAA/7/t0bXrAAD/v+3RtesAAP+/7dG16wAA//8AAAAAAABU1QAAAAAAAP+/AAAAAAAA//8AAAAA/v9U1QAAAAD+//+/AAAAAP7//n8AAP///v9U1QAA///+//5/AAD///7///8AAP//AABU1QAA//8AAP//AAD//wAA/////wAAAAD/v///AAAAAP////8AAAAAVNX/////AAD///////8AAP///////wAAVNX//wAA/v//v///AAD+//5///8AAP7/VNX//////v/+f//////+//////////7/VNURLrkz5///vxEuuTPn//+/ES616+f//78RLrXr5///v+3RuTPn//+/7dG5M+f//7/t0bXr5///v+3Rtevn//+//3////9///////9/////f/9/AAAAAP9/////f/9/AAD/f////3////9///////9/////f/9///8AAP9/////f1TVVNUAAP9/////f1TVVNUAAP9//3///1TVVNX/f////3//v1TVVNX///9//3//vwAA/3////9/qiqqKv///3//f/+/qiqqKgAA/3//f///qiqqKv9/////f/+/qiqqKv///3//fwAAAAD/f/9/AAD/f///////f/9///8AAP9/")
+}, {
+"aabb": AABB(-1.38959, -1.33796, -15.9063, 2.77917, 2.47521, 15.0507),
+"attribute_data": PackedByteArray("/18AAP+fAAD/X/+//1//v/9f/7//n/+//5//v/+f/7//X/8//5//P/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/7//H/9//1//v/9f////H/8//18AAP+f////nwAA/9//P/+f/7//n/+//9//f/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/z//X/8//1//P/+f/z//n/8//5//P/9f/7//X/+//5//v/+f/7//X/9//1//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AQAlAAkAAQAXACUAAgAdAAsAAgASAB0ACwAfAA8ACwAdAB8ACAAVAAAACAAjABUAEwAZABYAEwAQABkAHgAnACEAHgAkACcAEQAiABwAEQAUACIAIAAYABsAIAAmABgACQAjAAgACQAlACMADwAaAAYADwAfABoABgASAAIABgAaABIAAAAXAAEAAAAVABcABAArAAcABAApACsADQAsAAoADQAuACwADAAoAAMADAAtACgABQAvAA4ABQAqAC8A"),
+"material": SubResource("StandardMaterial3D_ui2ab"),
+"name": "Material.023",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("ES65M/7//n8RLrXr/v/+fxEuuTMAAP//ES65MwAA/78RLrkzAAD/vxEutesAAP+/ES616wAA//8RLrXrAAD/v+3RuTP+//5/7dG16/7//n/t0bkzAAD/v+3RuTMAAP//7dG5MwAA/7/t0bXrAAD/v+3RtesAAP+/7dG16wAA//8AAAAAAABU1QAAAAAAAP+/AAAAAAAA//8AAAAA/v9U1QAAAAD+//+/AAAAAP7//n8AAP///v9U1QAA///+//5/AAD///7///8AAP//AABU1QAA//8AAP//AAD//wAA/////wAAAAD/v///AAAAAP////8AAAAAVNX/////AAD///////8AAP///////wAAVNX//wAA/v//v///AAD+//5///8AAP7/VNX//////v/+f//////+//////////7/VNURLrkz5///vxEuuTPn//+/ES616+f//78RLrXr5///v+3RuTPn//+/7dG5M+f//7/t0bXr5///v+3Rtevn//+//3////9///////9/////f/9/AAAAAP9/////f/9/AAD/f////3////9///////9/////f/9///8AAP9/////f1TVVNUAAP9/////f1TVVNUAAP9//3///1TVVNX/f////3//v1TVVNX///9//3//vwAA/3////9/qiqqKv///3//f/+/qiqqKgAA/3//f///qiqqKv9/////f/+/qiqqKv///3//fwAAAAD/f/9/AAD/f///////f/9///8AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_eyioe")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r7np0"]
+_surfaces = [{
+"aabb": AABB(-1.56226, -1.56226, -1, 3.12451, 2.78278, 2.00001),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AQAPAAUAAQAKAA8AAgAMAAYAAgAIAAwABgANAAcABgAMAA0ABAAJAAAABAAOAAkACQALAAoACQAIAAsADAAPAA0ADAAOAA8ACAAOAAwACAAJAA4ADQAKAAsADQAPAAoABQAOAAQABQAPAA4ABwALAAMABwANAAsAAwAIAAIAAwALAAgAAAAKAAEAAAAJAAoAAgARAAMAAgAQABEABwASAAYABwATABIABgAQAAIABgASABAAAwATAAcAAwARABMA"),
+"name": "Material.022",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("ES65M/7/AAARLrXr/v8AABEuuTMAAAAAES616wAAAADt0bkz/v8AAO3Rtev+/wAA7dG5MwAAAADt0bXrAAAAAAAAAAAAAAAAAAAAAP7/AAAAAP///v8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAP//AAD+/wAA//////7/AAARLrkz5/8AABEutevn/wAA7dG5M+f/AADt0bXr5/8AAA==")
+}, {
+"aabb": AABB(-1.38959, -1.33796, -15.9063, 2.77917, 2.47521, 15.0507),
+"format": 34896613377,
+"index_count": 96,
+"index_data": PackedByteArray("AQAPAAUAAQAKAA8AAgAMAAYAAgAIAAwABgANAAcABgAMAA0ABAAJAAAABAAOAAkACQALAAoACQAIAAsADAAPAA0ADAAOAA8ACAAOAAwACAAJAA4ADQAKAAsADQAPAAoABQAOAAQABQAPAA4ABwALAAMABwANAAsAAwAIAAIAAwALAAgAAAAKAAEAAAAJAAoAAgARAAMAAgAQABEABwASAAYABwATABIABgAQAAIABgASABAAAwATAAcAAwARABMA"),
+"name": "Material.023",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("ES65M/7/AAARLrXr/v8AABEuuTMAAAAAES616wAAAADt0bkz/v8AAO3Rtev+/wAA7dG5MwAAAADt0bXrAAAAAAAAAAAAAAAAAAAAAP7/AAAAAP///v8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAP//AAD+/wAA//////7/AAARLrkz5/8AABEutevn/wAA7dG5M+f/AADt0bXr5/8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r2qb3"]
+resource_name = "shop_meny_stomp2_Cube_007"
+_surfaces = [{
+"aabb": AABB(-1.56226, -1.56226, -1, 3.12451, 2.78278, 2.00001),
+"attribute_data": PackedByteArray("/18AAP+fAAD/X/+//1//v/9f/7//n/+//5//v/+f/7//X/8//5//P/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/7//H/9//1//v/9f////H/8//18AAP+f////nwAA/9//P/+f/7//n/+//9//f/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/z//X/8//1//P/+f/z//n/8//5//P/9f/7//X/+//5//v/+f/7//X/9//1//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AQAlAAkAAQAXACUAAgAdAAsAAgASAB0ACwAfAA8ACwAdAB8ACAAVAAAACAAjABUAEwAZABYAEwAQABkAHgAnACEAHgAkACcAEQAiABwAEQAUACIAIAAYABsAIAAmABgACQAjAAgACQAlACMADwAaAAYADwAfABoABgASAAIABgAaABIAAAAXAAEAAAAVABcABAArAAcABAApACsADQAsAAoADQAuACwADAAoAAMADAAtACgABQAvAA4ABQAqAC8A"),
+"material": SubResource("StandardMaterial3D_gm1rq"),
+"name": "Material.022",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("ES65M/7//n8RLrXr/v/+fxEuuTMAAP//ES65MwAA/78RLrkzAAD/vxEutesAAP+/ES616wAA//8RLrXrAAD/v+3RuTP+//5/7dG16/7//n/t0bkzAAD/v+3RuTMAAP//7dG5MwAA/7/t0bXrAAD/v+3RtesAAP+/7dG16wAA//8AAAAAAABU1QAAAAAAAP+/AAAAAAAA//8AAAAA/v9U1QAAAAD+//+/AAAAAP7//n8AAP///v9U1QAA///+//5/AAD///7///8AAP//AABU1QAA//8AAP//AAD//wAA/////wAAAAD/v///AAAAAP////8AAAAAVNX/////AAD///////8AAP///////wAAVNX//wAA/v//v///AAD+//5///8AAP7/VNX//////v/+f//////+//////////7/VNURLrkz5///vxEuuTPn//+/ES616+f//78RLrXr5///v+3RuTPn//+/7dG5M+f//7/t0bXr5///v+3Rtevn//+//3////9///////9/////f/9/AAAAAP9/////f/9/AAD/f////3////9///////9/////f/9///8AAP9/////f1TVVNUAAP9/////f1TVVNUAAP9//3///1TVVNX/f////3//v1TVVNX///9//3//vwAA/3////9/qiqqKv///3//f/+/qiqqKgAA/3//f///qiqqKv9/////f/+/qiqqKv///3//fwAAAAD/f/9/AAD/f///////f/9///8AAP9/")
+}, {
+"aabb": AABB(-1.38959, -1.33796, -15.9063, 2.77917, 2.47521, 15.0507),
+"attribute_data": PackedByteArray("/18AAP+fAAD/X/+//1//v/9f/7//n/+//5//v/+f/7//X/8//5//P/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/7//H/9//1//v/9f////H/8//18AAP+f////nwAA/9//P/+f/7//n/+//9//f/9f/3//X/9//1//f/+f/3//n/9//5//f/9f/z//X/8//1//P/+f/z//n/8//5//P/9f/7//X/+//5//v/+f/7//X/9//1//f/+f/3//n/9/"),
+"format": 34896613399,
+"index_count": 96,
+"index_data": PackedByteArray("AQAlAAkAAQAXACUAAgAdAAsAAgASAB0ACwAfAA8ACwAdAB8ACAAVAAAACAAjABUAEwAZABYAEwAQABkAHgAnACEAHgAkACcAEQAiABwAEQAUACIAIAAYABsAIAAmABgACQAjAAgACQAlACMADwAaAAYADwAfABoABgASAAIABgAaABIAAAAXAAEAAAAVABcABAArAAcABAApACsADQAsAAoADQAuACwADAAoAAMADAAtACgABQAvAA4ABQAqAC8A"),
+"material": SubResource("StandardMaterial3D_ui2ab"),
+"name": "Material.023",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("ES65M/7//n8RLrXr/v/+fxEuuTMAAP//ES65MwAA/78RLrkzAAD/vxEutesAAP+/ES616wAA//8RLrXrAAD/v+3RuTP+//5/7dG16/7//n/t0bkzAAD/v+3RuTMAAP//7dG5MwAA/7/t0bXrAAD/v+3RtesAAP+/7dG16wAA//8AAAAAAABU1QAAAAAAAP+/AAAAAAAA//8AAAAA/v9U1QAAAAD+//+/AAAAAP7//n8AAP///v9U1QAA///+//5/AAD///7///8AAP//AABU1QAA//8AAP//AAD//wAA/////wAAAAD/v///AAAAAP////8AAAAAVNX/////AAD///////8AAP///////wAAVNX//wAA/v//v///AAD+//5///8AAP7/VNX//////v/+f//////+//////////7/VNURLrkz5///vxEuuTPn//+/ES616+f//78RLrXr5///v+3RuTPn//+/7dG5M+f//7/t0bXr5///v+3Rtevn//+//3////9///////9/////f/9/AAAAAP9/////f/9/AAD/f////3////9///////9/////f/9///8AAP9/////f1TVVNUAAP9/////f1TVVNUAAP9//3///1TVVNX/f////3//v1TVVNX///9//3//vwAA/3////9/qiqqKv///3//f/+/qiqqKgAA/3//f///qiqqKv9/////f/+/qiqqKv///3//fwAAAAD/f/9/AAD/f///////f/9///8AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_r7np0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8xg4"]
+albedo_color = Color(0.890196, 0.458824, 0.027451, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_633hm"]
+material = SubResource("StandardMaterial3D_c8xg4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cakmb"]
+albedo_color = Color(0.219608, 0.298039, 0.45098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ipc6b"]
+material = SubResource("StandardMaterial3D_cakmb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8acul"]
+albedo_color = Color(0.0705882, 0.113725, 0.301961, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a11e7"]
+material = SubResource("StandardMaterial3D_8acul")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_esg3c"]
+emission_enabled = true
+emission = Color(0.945098, 0.835294, 0, 1)
+emission_energy_multiplier = 1.28
+
+[sub_resource type="SphereMesh" id="SphereMesh_u834k"]
+material = SubResource("StandardMaterial3D_esg3c")
+
+[sub_resource type="Animation" id="Animation_juwyh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coin_number:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4w773"]
+resource_name = "bought"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coin_number:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(885, 3), Vector2(885, -20), Vector2(885, 3)]
+}
+
+[sub_resource type="Animation" id="Animation_c2vgm"]
+resource_name = "buying"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coin_number:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(878.6, 3), Vector2(860, 3), Vector2(885.6, 3), Vector2(860, 3), Vector2(885, 3), Vector2(860, 3), Vector2(878.6, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("coin_number:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.815686, 0, 0.160784, 1), Color(0.870588, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m31o1"]
+_data = {
+"RESET": SubResource("Animation_juwyh"),
+"bought": SubResource("Animation_4w773"),
+"buying": SubResource("Animation_c2vgm")
+}
+
+[node name="shop_meny_stomp2" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("2_flb2p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_color = Color(0.937255, 0.937255, 0.937255, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ciuks")
+
+[node name="band" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.15109, 0, 0, 0, 0.395473, 0, 0, 0, 20.6416, 0, -0.064, -14.901)
+mesh = SubResource("ArrayMesh_xbelx")
+skeleton = NodePath("")
+script = ExtResource("2_6wptf")
+
+[node name="SoftBody3D6" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -1.06581e-14, 0, 2.52862, 0, 0, 0, 0.0484458, -0.210966, 3.4408, 0.164931)
+material_override = SubResource("StandardMaterial3D_4vhq7")
+mesh = ExtResource("19_c8aei")
+skeleton = NodePath("")
+
+[node name="SoftBody3D3" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -7.10543e-15, 0, 2.52862, 0, -2.22045e-16, 0, 0.0484458, -0.0763111, 3.4408, 0.746282)
+material_override = SubResource("StandardMaterial3D_svykr")
+mesh = ExtResource("9_evg8s")
+skeleton = NodePath("../../..")
+
+[node name="SoftBody3D5" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.375536, -0.300931, -0.723274, 0.169439, 2.35935, -0.893676, 0.0435649, 0.00469869, 0.0206646, -0.0763111, 3.4408, -0.125744)
+material_override = SubResource("StandardMaterial3D_fcgo5")
+mesh = ExtResource("17_x14ps")
+skeleton = NodePath("")
+
+[node name="SoftBody3D" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -1.06581e-14, 0, 2.52862, 0, 2.22045e-16, 0, 0.0484458, -0.0763111, 3.4408, -0.416419)
+material_override = SubResource("StandardMaterial3D_bw321")
+mesh = ExtResource("13_1gp3y")
+skeleton = NodePath("")
+
+[node name="SoftBody3D4" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -7.10543e-15, 0, 2.52862, 0, -2.22045e-16, 0, 0.0484458, -0.0763111, 3.4408, 0.455606)
+material_override = SubResource("StandardMaterial3D_x4fg1")
+mesh = ExtResource("9_evg8s")
+skeleton = NodePath("../../..")
+
+[node name="SoftBody3D8" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.538388, 0.0221102, 0.222454, -0.263242, 1.60683, 0.477396, -0.0114007, -0.0103717, 0.0286229, -0.0763121, 3.31518, -0.561756)
+mesh = ExtResource("22_dryef")
+skeleton = NodePath("")
+
+[node name="SoftBody3D2" type="MeshInstance3D" parent="band/SoftBody3D8"]
+mesh = ExtResource("23_cbgnh")
+skeleton = NodePath("")
+
+[node name="SoftBody3D3" type="MeshInstance3D" parent="band/SoftBody3D8"]
+transform = Transform3D(0.0626687, -0.998034, -8.43592e-19, 0.998034, 0.0626687, -1.34347e-17, 1.34612e-17, 7.23783e-25, 1, 0, 0, 0)
+mesh = ExtResource("23_cbgnh")
+skeleton = NodePath("")
+
+[node name="SoftBody3D4" type="MeshInstance3D" parent="band/SoftBody3D8"]
+transform = Transform3D(-0.669701, -0.742631, 0, 0.742631, -0.669701, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_1babo")
+mesh = ExtResource("23_cbgnh")
+skeleton = NodePath("")
+
+[node name="SoftBody3D5" type="MeshInstance3D" parent="band/SoftBody3D8"]
+transform = Transform3D(-0.669701, -0.742631, 0, 0.742631, -0.669701, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("23_cbgnh")
+skeleton = NodePath("")
+
+[node name="SoftBody3D6" type="MeshInstance3D" parent="band/SoftBody3D8"]
+transform = Transform3D(0.714461, -0.699676, 0, 0.699676, 0.714461, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_faivl")
+mesh = ExtResource("23_cbgnh")
+skeleton = NodePath("")
+
+[node name="SoftBody3D7" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -7.10543e-15, 0, 2.52862, 0, -2.22045e-16, 0, 0.0484458, -0.0763111, 3.4408, -0.271081)
+mesh = ExtResource("20_axsbq")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_uq1c1")
+
+[node name="SoftBody3D2" type="MeshInstance3D" parent="band/SoftBody3D7"]
+transform = Transform3D(0.75442, 0, 0, 0, 0.754419, 0, 4.61853e-14, 0, 0.754419, 0.750315, 0.140505, -0.0262017)
+mesh = ExtResource("21_5vsub")
+skeleton = NodePath("")
+
+[node name="SoftBody3D2" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.868742, 0, -7.10543e-15, 0, 2.52862, 0, -2.22045e-16, 0, 0.0484458, -0.0763111, 3.4408, 0.600944)
+material_override = SubResource("StandardMaterial3D_e1mh7")
+mesh = ExtResource("9_evg8s")
+skeleton = NodePath("../../..")
+
+[node name="low-poly_flower" parent="band/SoftBody3D2" instance=ExtResource("11_6x2v5")]
+transform = Transform3D(0.175594, 0.101263, -0.0902316, -1.56248e-09, 0.147608, 0.165653, 0.135631, -0.131099, 0.116818, 0.502189, 0.538479, -0.523899)
+
+[node name="SoftBody3D9" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.678073, 0, -3.19744e-14, 0, 1.97365, 0, -5.55112e-16, 0, 0.0378131, -0.0763109, 3.58392, 0.310269)
+material_override = SubResource("StandardMaterial3D_qvbwj")
+mesh = ExtResource("26_4sfcw")
+skeleton = NodePath("")
+
+[node name="SoftBody3D10" type="MeshInstance3D" parent="band"]
+transform = Transform3D(0.600428, -0.288864, 0.557455, 1.11304, 2.27036, -0.0223811, -0.0277692, 0.0139801, 0.0371541, -0.0763111, 3.4408, 0.0195938)
+material_override = SubResource("StandardMaterial3D_r8sjh")
+mesh = ExtResource("28_byn7y")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="band"]
+transform = Transform3D(1.9562, 0, -1.06581e-13, 0, 1, 0, 0, 0, 0.0768877, -8.13937e-07, 0.500967, 1.03839)
+mesh = SubResource("BoxMesh_t0bvd")
+
+[node name="Cube_005" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.22255, 0, 0, 0, 2.59597, 0, 0, 0, 1, 0, -0.105841, -4.29801)
+mesh = SubResource("ArrayMesh_t6wef")
+skeleton = NodePath("")
+
+[node name="Cube_006" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.22255, 0, -8.74228e-08, 0, 2.59597, 0, 1.06879e-07, 0, -1, 0, -0.105841, 5.17097)
+mesh = SubResource("ArrayMesh_r2qb3")
+skeleton = NodePath("")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-3.98391e-08, -0.246983, 0.96902, 3.82615e-09, 0.96902, 0.246983, -1, 1.35472e-08, -3.76599e-08, 5.16982, 2.11728, 0.289568)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 60.6662, 0, 0, 0, 75.7924, -5.50788, 0, 0)
+mesh = SubResource("BoxMesh_633hm")
+
+[node name="shop_meny_stomp_box3" parent="." instance=ExtResource("3_ntgj4")]
+transform = Transform3D(1.05747, 0, 0, 0, 0.933543, 0, 3.55271e-15, 0, 0.933543, 0.0196314, -0.0288429, -0.328985)
+
+[node name="computers" parent="." instance=ExtResource("4_xd83m")]
+transform = Transform3D(0.468123, 0, 0, 0, 0.468123, 0, 0, 0, 0.468123, 1.18908, -0.325648, 0.414808)
+script = ExtResource("25_euqpt")
+
+[node name="basic" type="Node3D" parent="computers"]
+
+[node name="Label3D" type="Label3D" parent="computers/basic"]
+transform = Transform3D(-0.595759, -1.62836, 1.24774, 0.000911407, 1.29908, 1.6958, -2.05144, 0.47347, -0.361602, 2.92821, 1.92543, 5.21456)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "ability:"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="computers/basic"]
+transform = Transform3D(1, 0, -9.9476e-14, 0, 1, 0, 2.84217e-14, 0, 3.13002, 1.11489, 0.932754, 5.96046e-08)
+mesh = SubResource("BoxMesh_ipc6b")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="computers/basic"]
+transform = Transform3D(1, 0, -5.68434e-14, 0, 0.795339, 0, 2.84217e-14, 0, 2.77938, 1.14938, 0.950826, 5.96046e-08)
+mesh = SubResource("BoxMesh_a11e7")
+skeleton = NodePath("../..")
+
+[node name="left" type="Node3D" parent="computers"]
+
+[node name="middle" type="Node3D" parent="computers"]
+
+[node name="coin" parent="computers/middle" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-1.67852e-09, -0.128459, 0.100862, -1.12303e-08, 0.100862, 0.128459, -0.163325, -5.61513e-09, -9.86948e-09, 2.52115, 0.0432194, 0.601462)
+visible = false
+
+[node name="Label3D2" type="Label3D" parent="computers/middle/coin"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+visible = false
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D" type="Label3D" parent="computers/middle"]
+transform = Transform3D(-4.5552e-09, -2.70345, 1.63069, -2.36343e-07, 1.63069, 2.70345, -3.15718, -1.18172e-07, -2.04729e-07, 2.35642, 0.165927, -0.0301391)
+visible = false
+text = "Select"
+
+[node name="Label3D2" type="Label3D" parent="computers/middle"]
+transform = Transform3D(-3.59294e-09, -2.13236, 1.28622, -1.86417e-07, 1.28622, 2.13236, -2.49024, -9.32084e-08, -1.61481e-07, 2.35642, 0.165927, -0.030139)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="right" type="Node3D" parent="computers"]
+
+[node name="uppper middle" type="Node3D" parent="computers"]
+
+[node name="earth" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.37191, 3.46574, -3.7934)
+visible = false
+
+[node name="Label3D7" type="Label3D" parent="computers/earth"]
+transform = Transform3D(-0.315916, -1.07459, 0.785042, -0.0180907, 0.752174, 1.24397, -0.978439, 0.333056, -0.276471, -1.89989, -0.853508, 4.12158)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "
+15% jump 
+boost
+"
+
+[node name="Label3D9" type="Label3D" parent="computers/earth"]
+transform = Transform3D(0.268828, -0.683333, 0.485916, -0.0287332, 0.502473, 0.722509, -0.837993, -0.236442, 0.13111, -1.88307, -0.864542, -0.192728)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "we love 
+the earth <3"
+
+[node name="Label3D10" type="Label3D" parent="computers/earth"]
+transform = Transform3D(-5.46014e-08, 0, 1.24913, 0, 1.24913, 0, -1.24913, 0, -5.4601e-08, -2.66112, -1.13398, 1.79645)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Earth"
+
+[node name="coin2" parent="computers/earth" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-7.85756e-10, -0.0601346, 0.0472158, -5.25716e-09, 0.0472158, 0.0601346, -0.0764562, -2.62857e-09, -4.62013e-09, -2.27075, -1.60216, 2.05734)
+
+[node name="Label3D2" type="Label3D" parent="computers/earth/coin2"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D8" type="Label3D" parent="computers/earth/coin2"]
+transform = Transform3D(16.3359, 0.0847245, -0.243934, -0.0551099, 16.2217, 1.94385, 0.252286, -1.94285, 16.2199, 3.63907, 0.132534, 0.0806923)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "30"
+
+[node name="Label3D3" type="Label3D" parent="computers/earth"]
+transform = Transform3D(-2.13242e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.34787, -1.54472, 1.76167)
+visible = false
+text = "Select"
+
+[node name="Label3D4" type="Label3D" parent="computers/earth"]
+transform = Transform3D(-1.68196e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.34787, -1.54472, 1.76167)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="blue" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.70302, 3.46574, 21.8409)
+
+[node name="Label3D3" type="Label3D" parent="computers/blue"]
+transform = Transform3D(-0.389915, -1.06574, 0.816626, 0.0005965, 0.850227, 1.10987, -1.34264, 0.309879, -0.236663, -1.98933, -0.908723, -7.88701)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "none"
+
+[node name="Label3D4" type="Label3D" parent="computers/blue"]
+transform = Transform3D(0.305307, -0.776054, 0.551851, -0.0326321, 0.570655, 0.820548, -0.9517, -0.268525, 0.1489, -2.03808, -0.864542, -12.1928)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "classic 
+look of the
+game"
+
+[node name="Label3D6" type="Label3D" parent="computers/blue"]
+transform = Transform3D(-5.46014e-08, 0, 1.24913, 0, 1.24913, 0, -1.24913, 0, -5.4601e-08, -2.81612, -1.13398, -10.2036)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "mr. Splomp"
+
+[node name="Label3D5" type="Label3D" parent="computers/blue"]
+transform = Transform3D(-2.13244e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.50287, -1.54472, -10.2383)
+text = "Select"
+
+[node name="Label3D7" type="Label3D" parent="computers/blue"]
+transform = Transform3D(-1.68196e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.50287, -1.54472, -10.2383)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="eye" type="Node3D" parent="computers"]
+transform = Transform3D(0.923424, -0.739974, -1.77849, 0.143143, 1.99319, -0.754983, 1.92097, 0.207186, 0.911193, 7.70302, 3.46574, -16.6105)
+visible = false
+
+[node name="Label3D9" type="Label3D" parent="computers/eye"]
+transform = Transform3D(-0.618017, -0.0575041, 0.147998, 0.0232541, 0.673537, 0.695961, -0.091514, 0.55949, -0.822616, 8.16894, 0.774411, 6.25006)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "able to see longer 
+out of the camera"
+
+[node name="Label3D11" type="Label3D" parent="computers/eye"]
+transform = Transform3D(-0.814464, -0.604321, 0.4795, -0.256345, 0.86967, 0.660639, -0.727607, 0.370068, -0.76949, 4.28323, 0.462558, 4.47945)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "always 
+watching"
+
+[node name="Label3D12" type="Label3D" parent="computers/eye"]
+transform = Transform3D(-1.07002, 0.0797335, 0.514365, -0.115407, 1.11025, -0.412182, -0.507554, -0.420541, -0.990658, 5.71761, 0.673594, 6.07093)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Eye"
+
+[node name="coin2" parent="computers/eye" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-0.068753, -0.0228308, 0.0244398, -0.00741543, 0.0648859, 0.0397537, -0.0326125, 0.0333781, -0.0605629, 6.08956, 0.12684, 6.02267)
+
+[node name="Label3D2" type="Label3D" parent="computers/eye/coin2"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D10" type="Label3D" parent="computers/eye/coin2"]
+transform = Transform3D(16.3358, 0.084738, -0.243935, -0.0551093, 16.2217, 1.94391, 0.252295, -1.94286, 16.22, 3.6387, 0.132381, 0.0807657)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "50"
+
+[node name="Label3D5" type="Label3D" parent="computers/eye"]
+transform = Transform3D(-1.32904, -0.495912, 0.414786, -0.143345, 1.15065, 0.916402, -0.630419, 0.783844, -1.08282, 5.7942, 0.178474, 5.94046)
+visible = false
+text = "Select"
+
+[node name="Label3D6" type="Label3D" parent="computers/eye"]
+transform = Transform3D(-1.04829, -0.391153, 0.327165, -0.113064, 0.907583, 0.722817, -0.497247, 0.618261, -0.85408, 5.7942, 0.178474, 5.94046)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="bounce" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.70302, 3.46574, -29.4277)
+visible = false
+
+[node name="Label3D11" type="Label3D" parent="computers/bounce"]
+transform = Transform3D(-0.219697, -0.713302, 0.450278, 0.0139404, 0.420566, 0.842466, -0.654096, 0.248547, -0.133283, -1.93157, -0.938964, 16.1032)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "uncontrollable
+bouncing!"
+
+[node name="Label3D13" type="Label3D" parent="computers/bounce"]
+transform = Transform3D(0.249045, -0.633043, 0.450155, -0.0266186, 0.465495, 0.66934, -0.776323, -0.219041, 0.121461, -2.03808, -0.864542, 11.8073)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "bouncing 
+everywhere!"
+
+[node name="Label3D14" type="Label3D" parent="computers/bounce"]
+transform = Transform3D(-5.20122e-08, 0, 1.1899, 0, 1.1899, 0, -1.1899, 0, -5.20123e-08, -2.81612, -1.13398, 13.7965)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Bouncy ball"
+
+[node name="coin3" parent="computers/bounce" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-7.85756e-10, -0.0601346, 0.0472158, -5.25716e-09, 0.0472158, 0.0601346, -0.0764562, -2.62857e-09, -4.62013e-09, -2.42575, -1.60216, 14.0573)
+
+[node name="Label3D2" type="Label3D" parent="computers/bounce/coin3"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D12" type="Label3D" parent="computers/bounce/coin3"]
+transform = Transform3D(16.3359, 0.0847245, -0.243934, -0.0551099, 16.2217, 1.94385, 0.252286, -1.94285, 16.2199, 3.63868, 0.13253, 0.0806923)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "60"
+
+[node name="Label3D7" type="Label3D" parent="computers/bounce"]
+transform = Transform3D(-2.13244e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.50287, -1.54472, 13.7617)
+visible = false
+text = "Select"
+
+[node name="Label3D8" type="Label3D" parent="computers/bounce"]
+transform = Transform3D(-1.68196e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.50287, -1.54472, 13.7617)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="green" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.70302, 3.46574, 9.02375)
+visible = false
+
+[node name="Label3D5" type="Label3D" parent="computers/green"]
+transform = Transform3D(-0.220737, -0.638187, 0.402209, 0.0321555, 0.410733, 0.669359, -0.75367, 0.204439, -0.0892422, -1.94011, -0.920908, -1.88697)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "+20% speed
+-20% jump  
+ boost
+"
+
+[node name="Label3D7" type="Label3D" parent="computers/green"]
+transform = Transform3D(0.227165, -0.577425, 0.410607, -0.02428, 0.424599, 0.610535, -0.708117, -0.199798, 0.11079, -2.03808, -0.864542, -6.19274)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "yeah why not 
+make 
+the entire 
+family"
+
+[node name="Label3D8" type="Label3D" parent="computers/green"]
+transform = Transform3D(-2.76619e-08, 0, 0.632827, 0, 0.632827, 0, -0.632833, 0, -2.76618e-08, -2.81612, -1.13398, -4.20356)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Splomp's brother Klomp"
+
+[node name="coin4" parent="computers/green" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-7.85756e-10, -0.0601346, 0.0472158, -5.25716e-09, 0.0472158, 0.0601346, -0.0764562, -2.62857e-09, -4.62013e-09, -2.42575, -1.60216, -3.94267)
+
+[node name="Label3D2" type="Label3D" parent="computers/green/coin4"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157624)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D6" type="Label3D" parent="computers/green/coin4"]
+transform = Transform3D(16.3359, 0.0847245, -0.243934, -0.0551099, 16.2217, 1.94385, 0.252286, -1.94285, 16.2199, 3.63908, 0.13253, 0.0806942)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "20"
+
+[node name="Label3D9" type="Label3D" parent="computers/green"]
+transform = Transform3D(-2.13244e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.50287, -1.54472, -4.23834)
+text = "Select"
+
+[node name="Label3D10" type="Label3D" parent="computers/green"]
+transform = Transform3D(-1.68195e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.50287, -1.54472, -4.23833)
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="anti_gravity" type="Node3D" parent="computers"]
+transform = Transform3D(1.53742, 0.0631379, 0.63524, -0.258261, 1.57642, 0.468364, -0.583796, -0.531108, 1.4657, 7.70302, 3.26369, -35.8362)
+visible = false
+
+[node name="Label3D12" type="Label3D" parent="computers/anti_gravity"]
+transform = Transform3D(0.0211938, -0.706767, 0.289174, 0.186066, 0.25434, 0.74703, -0.571406, 0.0566058, 0.25398, -10.6751, -8.95173, 20.3082)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "tiny chance
+ of double
+ jumping, 
+triple jumping
+ or may even more"
+
+[node name="Label3D14" type="Label3D" parent="computers/anti_gravity"]
+transform = Transform3D(0.895483, -1.02575, 0.476234, 0.410121, 0.860649, 1.08255, -1.05392, -0.536632, 0.825907, -8.92577, -7.09712, 15.454)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "hates 
+gravity"
+
+[node name="Label3D15" type="Label3D" parent="computers/anti_gravity"]
+transform = Transform3D(0.433358, -0.191709, 1.14124, 0.394248, 1.17019, 0.0468675, -1.08801, 0.347669, 0.471544, -10.6894, -8.27681, 17.2232)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Anti gravity ball"
+
+[node name="coin5" parent="computers/anti_gravity" instance=ExtResource("29_xc23b")]
+transform = Transform3D(0.0344072, -0.0806676, 0.0439854, 0.0313021, 0.0544502, 0.075374, -0.0863842, -0.0123999, 0.044832, -10.2509, -8.93356, 17.5401)
+
+[node name="Label3D2" type="Label3D" parent="computers/anti_gravity/coin5"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D13" type="Label3D" parent="computers/anti_gravity/coin5"]
+transform = Transform3D(16.3359, 0.0847307, -0.243944, -0.0551209, 16.2217, 1.94386, 0.252268, -1.94287, 16.2199, 3.63901, 0.133192, 0.0803909)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "70"
+
+[node name="Label3D11" type="Label3D" parent="computers/anti_gravity"]
+transform = Transform3D(0.665114, -1.65182, 0.652743, 0.60509, 0.866052, 1.57505, -1.66986, -0.344107, 0.830724, -10.2207, -8.74646, 17.189)
+visible = false
+text = "Select"
+
+[node name="Label3D16" type="Label3D" parent="computers/anti_gravity"]
+transform = Transform3D(0.524612, -1.30288, 0.514854, 0.477268, 0.683103, 1.24233, -1.31711, -0.271416, 0.655238, -10.2207, -8.74646, 17.189)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="brick" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.70302, 3.46574, -23.0191)
+visible = false
+
+[node name="Label3D10" type="Label3D" parent="computers/brick"]
+transform = Transform3D(-0.350818, -1.13902, 0.719018, 0.0222605, 0.671573, 1.34527, -1.04448, 0.396888, -0.212831, -1.93157, -0.938964, 13.1032)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "-17% 
+slower"
+
+[node name="Label3D12" type="Label3D" parent="computers/brick"]
+transform = Transform3D(0.284305, -0.722669, 0.513891, -0.0303874, 0.531403, 0.764107, -0.886233, -0.250054, 0.138658, -2.03808, -0.864542, 8.80727)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "how is this 
+one even 
+rolling"
+
+[node name="Label3D13" type="Label3D" parent="computers/brick"]
+transform = Transform3D(-5.20122e-08, 0, 1.1899, 0, 1.1899, 0, -1.1899, 0, -5.20123e-08, -2.81612, -1.13398, 10.7964)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Brick guy"
+
+[node name="coin6" parent="computers/brick" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-7.85756e-10, -0.0601346, 0.0472158, -5.25716e-09, 0.0472158, 0.0601346, -0.0764562, -2.62857e-09, -4.62013e-09, -2.42575, -1.60216, 11.0573)
+
+[node name="Label3D2" type="Label3D" parent="computers/brick/coin6"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D11" type="Label3D" parent="computers/brick/coin6"]
+transform = Transform3D(16.3359, 0.0847245, -0.243934, -0.0551099, 16.2217, 1.94385, 0.252286, -1.94285, 16.2199, 3.63868, 0.132532, 0.0806923)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "50"
+
+[node name="Label3D14" type="Label3D" parent="computers/brick"]
+transform = Transform3D(-2.13244e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.50287, -1.54472, 10.7617)
+visible = false
+text = "Select"
+
+[node name="Label3D15" type="Label3D" parent="computers/brick"]
+transform = Transform3D(-1.68196e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.50287, -1.54472, 10.7617)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="yellow" type="Node3D" parent="computers"]
+transform = Transform3D(2.13619, 0, -4.9738e-14, 0, 2.13619, 0, 0, 0, 2.13619, 7.70302, 3.46574, 15.4323)
+visible = false
+
+[node name="Label3D4" type="Label3D" parent="computers/yellow"]
+transform = Transform3D(-0.220737, -0.638187, 0.402209, 0.0321555, 0.410733, 0.669359, -0.75367, 0.204439, -0.0892422, -1.94011, -0.920908, -4.88698)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "-20% speed
++20% jump  
+ boost
+"
+
+[node name="Label3D6" type="Label3D" parent="computers/yellow"]
+transform = Transform3D(0.537747, -1.36689, 0.971996, -0.0574761, 1.00511, 1.44526, -1.67626, -0.472964, 0.262264, -2.03808, -0.864542, -9.19275)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cool"
+
+[node name="Label3D7" type="Label3D" parent="computers/yellow"]
+transform = Transform3D(-5.46014e-08, 0, 1.24913, 0, 1.24913, 0, -1.24913, 0, -5.4601e-08, -2.81612, -1.13398, -7.20357)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "mrs. Splomp"
+
+[node name="coin7" parent="computers/yellow" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-7.85756e-10, -0.0601346, 0.0472158, -5.25716e-09, 0.0472158, 0.0601346, -0.0764562, -2.62857e-09, -4.62013e-09, -2.42575, -1.60216, -6.94266)
+
+[node name="Label3D2" type="Label3D" parent="computers/yellow/coin7"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D5" type="Label3D" parent="computers/yellow/coin7"]
+transform = Transform3D(16.3359, 0.0847247, -0.243935, -0.0551098, 16.2217, 1.94385, 0.252286, -1.94285, 16.2199, 3.63936, 0.132511, 0.0807266)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "20"
+
+[node name="Label3D3" type="Label3D" parent="computers/yellow"]
+transform = Transform3D(-2.13244e-09, -1.26555, 0.763366, -1.10638e-07, 0.763366, 1.26555, -1.47795, -5.53188e-08, -9.58386e-08, -2.50287, -1.54472, -7.23833)
+visible = false
+text = "Select"
+
+[node name="Label3D8" type="Label3D" parent="computers/yellow"]
+transform = Transform3D(-1.68196e-09, -0.998207, 0.602109, -8.7266e-08, 0.602109, 0.998207, -1.16574, -4.3633e-08, -7.55932e-08, -2.50287, -1.54472, -7.23833)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="spike" type="Node3D" parent="computers"]
+transform = Transform3D(1.72781, 0, -6.39488e-14, 0, 1.72781, 0, -1.42109e-14, 0, 1.72781, 7.70302, 3.62759, 2.6152)
+visible = false
+
+[node name="Label3D6" type="Label3D" parent="computers/spike"]
+transform = Transform3D(-0.390585, -1.32858, 0.970593, -0.0223665, 0.929955, 1.53798, -1.2097, 0.411776, -0.341817, -2.54058, -1.14891, 1.38665)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "
+15% faster
+"
+
+[node name="Label3D8" type="Label3D" parent="computers/spike"]
+transform = Transform3D(0.32307, -0.821208, 0.583959, -0.0345307, 0.603855, 0.868288, -1.00707, -0.284148, 0.157564, -2.51979, -1.16255, -3.94737)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "don't touch 
+this guy. 
+that hurts"
+
+[node name="Label3D9" type="Label3D" parent="computers/spike"]
+transform = Transform3D(-6.75069e-08, 0, 1.54437, 0, 1.54437, 0, -1.54437, 0, -6.75063e-08, -3.48173, -1.49568, -1.48804)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Spiky"
+
+[node name="coin2" parent="computers/spike" instance=ExtResource("29_xc23b")]
+transform = Transform3D(-9.71476e-10, -0.0743479, 0.0583756, -6.49973e-09, 0.0583756, 0.0743479, -0.0945272, -3.24986e-09, -5.71213e-09, -2.9991, -2.07452, -1.16549)
+
+[node name="Label3D2" type="Label3D" parent="computers/spike/coin2"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D7" type="Label3D" parent="computers/spike/coin2"]
+transform = Transform3D(16.3358, 0.0847246, -0.243934, -0.0551093, 16.2218, 1.9439, 0.252286, -1.94288, 16.22, 3.63895, 0.132532, 0.0807457)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "30"
+
+[node name="Label3D15" type="Label3D" parent="computers/spike"]
+transform = Transform3D(-2.63646e-09, -1.56467, 0.943793, -1.36788e-07, 0.943793, 1.56467, -1.82727, -6.83938e-08, -1.18491e-07, -3.09444, -2.0035, -1.53104)
+visible = false
+text = "Select"
+
+[node name="Label3D16" type="Label3D" parent="computers/spike"]
+transform = Transform3D(-2.07952e-09, -1.23414, 0.744421, -1.07892e-07, 0.744421, 1.23414, -1.44127, -5.3946e-08, -9.34601e-08, -3.09444, -2.0035, -1.53104)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="art" type="Node3D" parent="computers"]
+transform = Transform3D(1.47642, -0.710302, 1.37075, 0.940303, 1.91801, -0.0189077, -1.22447, 0.616444, 1.63829, 7.70302, 3.46574, -10.202)
+visible = false
+
+[node name="Label3D8" type="Label3D" parent="computers/art"]
+transform = Transform3D(0.500376, -0.539952, 1.18861, -0.257261, 1.20718, 0.65669, -1.2799, -0.453737, 0.332688, -5.85211, 1.89817, 4.18666)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "none"
+
+[node name="Label3D9" type="Label3D" parent="computers/art"]
+transform = Transform3D(0.555955, -0.0983246, 0.492348, -0.303723, 0.519075, 0.446631, -0.399779, -0.531089, 0.34537, -3.39829, 0.711525, 0.852804)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "i can't give 
+you free 
+drawing, but
+ i can give
+ you this"
+
+[node name="Label3D11" type="Label3D" parent="computers/art"]
+transform = Transform3D(0.682054, 0.52377, 0.822398, -0.343372, 1.06838, -0.395652, -0.912562, -0.0105319, 0.763538, -5.19483, 1.30233, 1.88147)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "Beautiful art"
+
+[node name="coin3" parent="computers/art" instance=ExtResource("29_xc23b")]
+transform = Transform3D(0.0438246, -0.0207784, 0.0591031, -0.022063, 0.0623889, 0.0382933, -0.0586358, -0.0390052, 0.0297653, -5.28066, 0.827457, 2.3362)
+
+[node name="Label3D2" type="Label3D" parent="computers/art/coin3"]
+transform = Transform3D(16.3358, 0.0847245, -0.243934, -0.0551096, 16.2217, 1.9439, 0.252286, -1.94286, 16.22, 3.6184, 3.05383, -0.157625)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "cost:"
+
+[node name="Label3D10" type="Label3D" parent="computers/art/coin3"]
+transform = Transform3D(16.3359, 0.0847203, -0.243924, -0.0551223, 16.2217, 1.9439, 0.252299, -1.94287, 16.22, 3.63915, 0.13246, 0.0806742)
+outline_modulate = Color(0.00784314, 0.00784314, 0.00784314, 1)
+text = "40"
+
+[node name="Label3D3" type="Label3D" parent="computers/art"]
+transform = Transform3D(0.847158, -0.538661, 1.08467, -0.426493, 1.10621, 0.882469, -1.13347, -0.818835, 0.478638, -5.1392, 0.819354, 2.05945)
+visible = false
+text = "Select"
+
+[node name="Label3D4" type="Label3D" parent="computers/art"]
+transform = Transform3D(0.668201, -0.424871, 0.855535, -0.336398, 0.872527, 0.696052, -0.894028, -0.64586, 0.377528, -5.1392, 0.819354, 2.05945)
+visible = false
+modulate = Color(0.435294, 0.435294, 0.435294, 1)
+outline_modulate = Color(0.172549, 0.172549, 0.172549, 1)
+text = "Selected"
+
+[node name="shop_meny_stomp_lamp" parent="." instance=ExtResource("5_gw4hk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.328, 3)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="shop_meny_stomp_lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.29787, 2.38321, -2.36452)
+light_color = Color(1, 1, 0, 1)
+light_energy = 3.692
+omni_range = 15.145
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="shop_meny_stomp_lamp"]
+transform = Transform3D(0.646116, 0, 0, 0, 0.646116, 0, 0, 0, 0.646116, -4.42707, 2.52055, -2.38976)
+mesh = SubResource("SphereMesh_u834k")
+
+[node name="table" parent="." instance=ExtResource("6_7ppy6")]
+transform = Transform3D(0.327333, 0, 0, 0, 0.825523, 0, -8.88178e-16, 0, 0.709852, -3.51241, 0, 3.22772)
+
+[node name="plant" parent="." instance=ExtResource("7_vab2x")]
+transform = Transform3D(0.292324, 0, 8.88178e-16, 0, 0.292324, 0, -8.88178e-16, 0, 0.292324, -3.84806, 1.57764, 2.39081)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+self_modulate = Color(0, 0, 0, 0.647059)
+offset_left = 760.0
+offset_top = -2.0
+offset_right = 800.0
+offset_bottom = 38.0004
+scale = Vector2(6.37517, 2.09858)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 771.0
+offset_top = -2.0
+offset_right = 811.0
+offset_bottom = 38.0
+scale = Vector2(5.93605, 1.81347)
+mouse_filter = 2
+color = Color(0.396078, 0.396078, 0.396078, 1)
+
+[node name="CoinImage" type="Sprite2D" parent="."]
+position = Vector2(808.6, 35)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("30_trb8t")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 842.6
+offset_top = 15.0
+offset_right = 882.6
+offset_bottom = 38.0
+scale = Vector2(2.55239, 1.87839)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "X"
+
+[node name="coin_number" type="Label" parent="."]
+offset_left = 885.0
+offset_top = 3.0
+offset_right = 925.0
+offset_bottom = 26.0
+scale = Vector2(2.60875, 2.60668)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "1000"
+script = ExtResource("31_i6pel")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_m31o1")
+}
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+self_modulate = Color(0, 0, 0, 0.647059)
+offset_left = -9.0
+offset_top = -9.99997
+offset_right = 31.0
+offset_bottom = 30.0004
+scale = Vector2(7.42621, 2.17423)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(6.61101, 1.48901)
+mouse_filter = 2
+color = Color(0.4, 0.4, 0.4, 1)
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(2.40593, 2.39214)
+text = "esc to go back"

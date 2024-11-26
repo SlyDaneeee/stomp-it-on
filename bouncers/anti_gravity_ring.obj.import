@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cev6wlfg5nr03"
+path="res://.godot/imported/anti_gravity_ring.obj-dbb0ebf71aff548434aed42778b69dee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/anti_gravity_ring.obj-dbb0ebf71aff548434aed42778b69dee.mesh"]
+
+source_file="res://bouncers/anti_gravity_ring.obj"
+dest_files=["res://.godot/imported/anti_gravity_ring.obj-dbb0ebf71aff548434aed42778b69dee.mesh", "res://.godot/imported/anti_gravity_ring.obj-dbb0ebf71aff548434aed42778b69dee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

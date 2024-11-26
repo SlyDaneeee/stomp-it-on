@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bu7qt5hjnx8cr"
+path="res://.godot/imported/Funky and piano and guitar jazz (7df7ba710fe34ca5b1f12fb6c2905e0d).mp3-9004eb3ccf362a8e9b55d41d824f40a2.mp3str"
+
+[deps]
+
+source_file="res://Funky and piano and guitar jazz (7df7ba710fe34ca5b1f12fb6c2905e0d).mp3"
+dest_files=["res://.godot/imported/Funky and piano and guitar jazz (7df7ba710fe34ca5b1f12fb6c2905e0d).mp3-9004eb3ccf362a8e9b55d41d824f40a2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

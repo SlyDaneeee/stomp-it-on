@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtv2wrky3ppy6"]
+
+[ext_resource type="Script" path="res://splomp.gd" id="1_ptld8"]
+
+[node name="RigidBody3D" type="RigidBody3D"]
+script = ExtResource("1_ptld8")

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0bsatmh6cosd"
+path="res://.godot/imported/jelly_ball.obj-5443ca795193e2f856d8f4d6969bf09d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/jelly_ball.obj-5443ca795193e2f856d8f4d6969bf09d.mesh"]
+
+source_file="res://bouncers/jelly_ball.obj"
+dest_files=["res://.godot/imported/jelly_ball.obj-5443ca795193e2f856d8f4d6969bf09d.mesh", "res://.godot/imported/jelly_ball.obj-5443ca795193e2f856d8f4d6969bf09d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

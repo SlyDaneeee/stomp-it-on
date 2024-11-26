@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://x13dgcwfp7db"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_0025o"]
+[ext_resource type="Script" path="res://camera_controller.gd" id="2_xqec8"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0w6pb"]
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17376, 0)
+visible = false
+script = ExtResource("1_0025o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.15319, 0, 0, 0, 1, 0, -0.0693213, 0)
+mesh = SubResource("CapsuleMesh_0w6pb")
+
+[node name="camroot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.451118, 0)
+script = ExtResource("2_xqec8")
+
+[node name="camyaw" type="Node3D" parent="camroot"]
+
+[node name="campitch" type="Node3D" parent="camroot/camyaw"]
+
+[node name="Camera3D" type="Camera3D" parent="camroot/camyaw/campitch"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50529, 3.79766)
+
+[node name="Head" type="Node3D" parent="camroot/camyaw"]
+
+[connection signal="nope" from="camroot" to="." method="_on_camroot_nope"]
+[connection signal="switch_control" from="camroot" to="." method="_on_camroot_switch_control"]

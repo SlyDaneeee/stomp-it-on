@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwalcvak7ysh7"
+path="res://.godot/imported/Funky and happy piano jazz happening in western (f530f0e11a7449658a42b23a9befd9bf).mp3-5b17ca586e8c675389a94a843f251075.mp3str"
+
+[deps]
+
+source_file="res://Funky and happy piano jazz happening in western (f530f0e11a7449658a42b23a9befd9bf).mp3"
+dest_files=["res://.godot/imported/Funky and happy piano jazz happening in western (f530f0e11a7449658a42b23a9befd9bf).mp3-5b17ca586e8c675389a94a843f251075.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

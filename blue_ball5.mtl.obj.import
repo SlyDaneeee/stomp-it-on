@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wu7yfjj8lq3w"
+path="res://.godot/imported/blue_ball5.mtl.obj-726704e1e14cfaa25bae7592fa318c1e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blue_ball5.mtl.obj-726704e1e14cfaa25bae7592fa318c1e.mesh"]
+
+source_file="res://blue_ball5.mtl.obj"
+dest_files=["res://.godot/imported/blue_ball5.mtl.obj-726704e1e14cfaa25bae7592fa318c1e.mesh", "res://.godot/imported/blue_ball5.mtl.obj-726704e1e14cfaa25bae7592fa318c1e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

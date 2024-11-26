@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dv5s54kud6blt"
+path="res://.godot/imported/real_bounce_ball.obj-647dd710dd2128c006604625d1e5c7f6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/real_bounce_ball.obj-647dd710dd2128c006604625d1e5c7f6.mesh"]
+
+source_file="res://bouncers/real_bounce_ball.obj"
+dest_files=["res://.godot/imported/real_bounce_ball.obj-647dd710dd2128c006604625d1e5c7f6.mesh", "res://.godot/imported/real_bounce_ball.obj-647dd710dd2128c006604625d1e5c7f6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

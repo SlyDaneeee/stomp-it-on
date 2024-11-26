@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3cdiahjvqpy1"
+path="res://.godot/imported/low_poly_eye.obj-28b2233c711b860122c2b197c4383172.mesh"
+
+[deps]
+
+files=["res://.godot/imported/low_poly_eye.obj-28b2233c711b860122c2b197c4383172.mesh"]
+
+source_file="res://bouncers/low_poly_eye.obj"
+dest_files=["res://.godot/imported/low_poly_eye.obj-28b2233c711b860122c2b197c4383172.mesh", "res://.godot/imported/low_poly_eye.obj-28b2233c711b860122c2b197c4383172.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
